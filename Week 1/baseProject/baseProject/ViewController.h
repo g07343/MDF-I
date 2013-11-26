@@ -9,5 +9,13 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+{
+    NSArray *nameArray;
+    NSArray *originArray;
+     NSArray *picArray;
+    IBOutlet UITableView *tableView;
+}
+
+-(IBAction)onClick:(id)sender;
 
 @end
