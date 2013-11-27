@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "CustomCell.h"
+#import "DetailViewController.h"
 @interface ViewController ()
 
 @end
@@ -26,8 +27,10 @@
     //array to hold all of the maker's logos
     picArray = [[NSMutableArray alloc]initWithObjects:@"audi.jpg", @"bmw.jpg", @"cadillac.jpg", @"chevrolet.jpg", @"chrysler.jpg", @"dodge.jpg", @"ford.jpg", @"honda.jpg", @"hyundai.jpg", @"infiniti.jpg", @"kia.jpg", @"lexus.jpg", @"mazda.jpg", @"mitsubishi.jpg", @"nissan.jpg", @"porsche.jpg", @"subaru.jpg", @"toyota.jpg", @"volvo.jpg", @"vw.jpg", nil];
     
+    //set background of tableView to invisible to let custom bg show through
     tableView.backgroundColor = [UIColor clearColor];
     tableView.opaque = NO;
+    //manually set the rowHeight to make elements more tappable and easier to see
     tableView.rowHeight = 125;
 }
 
@@ -38,11 +41,12 @@
 }
 
 -(IBAction)onClick:(id)sender
-{
+{   //check bool value to determine if editing is currently taking place
     if (editing == false)
     {
         editing = true;
-        [sender setTitle:@"Back" forState:UIControlStateNormal];
+        //override default button text to guide user
+        [sender setTitle:@"Done" forState:UIControlStateNormal];
         [tableView setEditing:true];
     } else {
         editing = false;
@@ -79,6 +83,7 @@
     cell.textLabel.text = (NSString*)[nameArray objectAtIndex:indexPath.row];
     //center text
     cell.textLabel.textAlignment = NSTextAlignmentCenter;
+    //set text bg color to transparent
     cell.textLabel.backgroundColor = [UIColor clearColor];
     //set the imageView src to the temporary string
     cell.imageView.image = [UIImage imageNamed:temp];
@@ -109,9 +114,23 @@
         [picArray removeObjectAtIndex:indexPath.row];
         //actually remove the object from the tableview displayed to the user
         [tableView2 deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:true];
-        
     }
+}
+//default method provided by the delegate for handling cell selection
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSLog(@"Row=%d", indexPath.row);
+    //NSString *temp = [[NSString alloc]initWithFormat:objectAtIndex:indexPath.row];
+    NSString *temp = [nameArray objectAtIndex:indexPath.row];
+    NSLog(@"%@", temp);
     
+    //open detail view
+     DetailViewController *detailView = [[DetailViewController alloc]initWithNibName:@"DetailViewController" bundle:nil];
+    if (detailView != nil)
+    {//set delegate
+        //detailView.delegate = self;
+        [self presentModalViewController:detailView animated:TRUE];
+    }
 }
 
 @end

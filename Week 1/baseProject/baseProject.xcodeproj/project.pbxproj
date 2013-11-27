@@ -43,6 +43,8 @@
 		C96370701845531900975F7D /* vw.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C963705C1845531900975F7D /* vw.jpg */; };
 		C963707518459D5B00975F7D /* transparent.png in Resources */ = {isa = PBXBuildFile; fileRef = C963707418459D5B00975F7D /* transparent.png */; };
 		C96370771845A80D00975F7D /* selected.png in Resources */ = {isa = PBXBuildFile; fileRef = C96370761845A80D00975F7D /* selected.png */; };
+		C963707B1845BB9000975F7D /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C96370791845BB9000975F7D /* DetailViewController.m */; };
+		C963707C1845BB9000975F7D /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C963707A1845BB9000975F7D /* DetailViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -88,6 +90,9 @@
 		C963705C1845531900975F7D /* vw.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = vw.jpg; sourceTree = "<group>"; };
 		C963707418459D5B00975F7D /* transparent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = transparent.png; sourceTree = "<group>"; };
 		C96370761845A80D00975F7D /* selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = selected.png; sourceTree = "<group>"; };
+		C96370781845BB9000975F7D /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		C96370791845BB9000975F7D /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		C963707A1845BB9000975F7D /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +149,9 @@
 				C96370441845433400975F7D /* CustomCell.xib */,
 				C9637046184544B500975F7D /* CustomCell.h */,
 				C9637047184544B500975F7D /* CustomCell.m */,
+				C96370781845BB9000975F7D /* DetailViewController.h */,
+				C96370791845BB9000975F7D /* DetailViewController.m */,
+				C963707A1845BB9000975F7D /* DetailViewController.xib */,
 			);
 			path = baseProject;
 			sourceTree = "<group>";
@@ -250,6 +258,7 @@
 				A21C4CE517D7878600C6C3BB /* InfoPlist.strings in Resources */,
 				A21C4CED17D7878600C6C3BB /* Default.png in Resources */,
 				C96370681845531900975F7D /* lexus.jpg in Resources */,
+				C963707C1845BB9000975F7D /* DetailViewController.xib in Resources */,
 				C96370691845531900975F7D /* mazda.jpg in Resources */,
 				C963705D1845531900975F7D /* audi.jpg in Resources */,
 				C96370661845531900975F7D /* infiniti.jpg in Resources */,
@@ -282,6 +291,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C963707B1845BB9000975F7D /* DetailViewController.m in Sources */,
 				A21C4CE717D7878600C6C3BB /* main.m in Sources */,
 				A21C4CEB17D7878600C6C3BB /* AppDelegate.m in Sources */,
 				C9637048184544B500975F7D /* CustomCell.m in Sources */,
@@ -372,6 +382,7 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "baseProject/baseProject-Prefix.pch";
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
 				INFOPLIST_FILE = "baseProject/baseProject-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -383,6 +394,7 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "baseProject/baseProject-Prefix.pch";
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
 				INFOPLIST_FILE = "baseProject/baseProject-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
