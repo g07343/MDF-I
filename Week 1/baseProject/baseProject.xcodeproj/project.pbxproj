@@ -144,14 +144,14 @@
 				A21C4CF217D7878600C6C3BB /* ViewController.h */,
 				A21C4CF317D7878600C6C3BB /* ViewController.m */,
 				A21C4CF517D7878600C6C3BB /* ViewController.xib */,
+				C96370781845BB9000975F7D /* DetailViewController.h */,
+				C96370791845BB9000975F7D /* DetailViewController.m */,
+				C963707A1845BB9000975F7D /* DetailViewController.xib */,
 				C96370711845561800975F7D /* images */,
 				A21C4CE117D7878600C6C3BB /* Supporting Files */,
 				C96370441845433400975F7D /* CustomCell.xib */,
 				C9637046184544B500975F7D /* CustomCell.h */,
 				C9637047184544B500975F7D /* CustomCell.m */,
-				C96370781845BB9000975F7D /* DetailViewController.h */,
-				C96370791845BB9000975F7D /* DetailViewController.m */,
-				C963707A1845BB9000975F7D /* DetailViewController.xib */,
 			);
 			path = baseProject;
 			sourceTree = "<group>";

@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol MainViewDelegate <NSObject>
+
+-(void)DidSelect:(NSString*)nameString;
+
+@end
+
 @interface ViewController : UIViewController <UITableViewDelegate>
 {
     NSMutableArray *nameArray;
@@ -20,4 +26,8 @@
 
 -(IBAction)onClick:(id)sender;
 
+@property (strong) id<MainViewDelegate> delegate;
+
 @end
+
+

@@ -8,14 +8,23 @@
 
 #import "ViewController.h"
 
-@interface DetailViewController : ViewController
+@interface DetailViewController : ViewController <MainViewDelegate>
 {
     IBOutlet UILabel *nameLabel;
     IBOutlet UILabel *dateLabel;
     IBOutlet UILabel *carLabel;
     IBOutlet UILabel *urlLabel;
     IBOutlet UIImageView *logo;
+    //dynamic string variables to be overriden when user chooses something
+    NSString *titleString;
+    NSString *dateString;
+    NSString *carString;
+    NSString *urlString;
+    NSString *imgSrc;
+    
 }
+@property NSString *titleString;
+
 
 -(IBAction)onClick:(id)sender;
 

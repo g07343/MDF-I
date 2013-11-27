@@ -9,11 +9,14 @@
 #import "ViewController.h"
 #import "CustomCell.h"
 #import "DetailViewController.h"
+
 @interface ViewController ()
 
 @end
 
 @implementation ViewController
+
+@synthesize delegate;
 
 - (void)viewDidLoad
 {
@@ -119,17 +122,29 @@
 //default method provided by the delegate for handling cell selection
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSLog(@"Row=%d", indexPath.row);
+    //NSLog(@"Row=%d", indexPath.row);
     //NSString *temp = [[NSString alloc]initWithFormat:objectAtIndex:indexPath.row];
     NSString *temp = [nameArray objectAtIndex:indexPath.row];
-    NSLog(@"%@", temp);
+    //NSLog(@"%@", temp);
     
     //open detail view
      DetailViewController *detailView = [[DetailViewController alloc]initWithNibName:@"DetailViewController" bundle:nil];
     if (detailView != nil)
-    {//set delegate
-        //detailView.delegate = self;
+    {
+        [detailView setTitleString:temp];
         [self presentModalViewController:detailView animated:TRUE];
+//        if (delegate != nil)
+//        {
+//            [delegate DidSelect:temp];
+//            [self presentModalViewController:detailView animated:TRUE];
+//            //manually set the delegate, since the detailView instance hasn't been loaded for the first time yet (meaning it hasn't set itself as the delegate yet)
+//        } else {
+//            delegate = detailView;
+//            //detailView.titleString = temp;
+//            [detailView setTitleString:temp];
+//            [delegate DidSelect:temp];
+//            [self presentModalViewController:detailView animated:TRUE];
+//        }
     }
 }
 
