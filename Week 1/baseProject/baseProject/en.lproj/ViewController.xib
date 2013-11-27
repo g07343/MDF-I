@@ -7,6 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController">
             <connections>
+                <outlet property="editButton" destination="Dkb-hG-tQu" id="Jtz-Jr-kyw"/>
                 <outlet property="tableView" destination="dJB-pc-13m" id="qsd-tJ-Txa"/>
                 <outlet property="view" destination="6" id="7"/>
             </connections>
@@ -40,7 +41,7 @@
                         <action selector="onClick:" destination="-1" eventType="touchUpInside" id="Qwr-kJ-78E"/>
                     </connections>
                 </button>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="dJB-pc-13m">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="dJB-pc-13m">
                     <rect key="frame" x="9" y="65" width="303" height="503"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

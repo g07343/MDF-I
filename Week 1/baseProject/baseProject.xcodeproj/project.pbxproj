@@ -41,6 +41,8 @@
 		C963706E1845531900975F7D /* toyota.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C963705A1845531900975F7D /* toyota.jpg */; };
 		C963706F1845531900975F7D /* volvo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C963705B1845531900975F7D /* volvo.jpg */; };
 		C96370701845531900975F7D /* vw.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C963705C1845531900975F7D /* vw.jpg */; };
+		C963707518459D5B00975F7D /* transparent.png in Resources */ = {isa = PBXBuildFile; fileRef = C963707418459D5B00975F7D /* transparent.png */; };
+		C96370771845A80D00975F7D /* selected.png in Resources */ = {isa = PBXBuildFile; fileRef = C96370761845A80D00975F7D /* selected.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -84,6 +86,8 @@
 		C963705A1845531900975F7D /* toyota.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = toyota.jpg; sourceTree = "<group>"; };
 		C963705B1845531900975F7D /* volvo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = volvo.jpg; sourceTree = "<group>"; };
 		C963705C1845531900975F7D /* vw.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = vw.jpg; sourceTree = "<group>"; };
+		C963707418459D5B00975F7D /* transparent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = transparent.png; sourceTree = "<group>"; };
+		C96370761845A80D00975F7D /* selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = selected.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +139,34 @@
 				A21C4CF217D7878600C6C3BB /* ViewController.h */,
 				A21C4CF317D7878600C6C3BB /* ViewController.m */,
 				A21C4CF517D7878600C6C3BB /* ViewController.xib */,
+				C96370711845561800975F7D /* images */,
+				A21C4CE117D7878600C6C3BB /* Supporting Files */,
+				C96370441845433400975F7D /* CustomCell.xib */,
+				C9637046184544B500975F7D /* CustomCell.h */,
+				C9637047184544B500975F7D /* CustomCell.m */,
+			);
+			path = baseProject;
+			sourceTree = "<group>";
+		};
+		A21C4CE117D7878600C6C3BB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A21C4CE217D7878600C6C3BB /* baseProject-Info.plist */,
+				A21C4CE317D7878600C6C3BB /* InfoPlist.strings */,
+				A21C4CE617D7878600C6C3BB /* main.m */,
+				A21C4CE817D7878600C6C3BB /* baseProject-Prefix.pch */,
+				A21C4CEC17D7878600C6C3BB /* Default.png */,
+				A21C4CEE17D7878600C6C3BB /* Default@2x.png */,
+				A21C4CF017D7878600C6C3BB /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C96370711845561800975F7D /* images */ = {
+			isa = PBXGroup;
+			children = (
+				C96370761845A80D00975F7D /* selected.png */,
+				C963707418459D5B00975F7D /* transparent.png */,
 				C96370491845531900975F7D /* audi.jpg */,
 				C963704A1845531900975F7D /* bmw.jpg */,
 				C963704B1845531900975F7D /* cadillac.jpg */,
@@ -156,26 +188,8 @@
 				C963705B1845531900975F7D /* volvo.jpg */,
 				C963705C1845531900975F7D /* vw.jpg */,
 				C96370421845424A00975F7D /* Carbon_bg.jpg */,
-				A21C4CE117D7878600C6C3BB /* Supporting Files */,
-				C96370441845433400975F7D /* CustomCell.xib */,
-				C9637046184544B500975F7D /* CustomCell.h */,
-				C9637047184544B500975F7D /* CustomCell.m */,
 			);
-			path = baseProject;
-			sourceTree = "<group>";
-		};
-		A21C4CE117D7878600C6C3BB /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				A21C4CE217D7878600C6C3BB /* baseProject-Info.plist */,
-				A21C4CE317D7878600C6C3BB /* InfoPlist.strings */,
-				A21C4CE617D7878600C6C3BB /* main.m */,
-				A21C4CE817D7878600C6C3BB /* baseProject-Prefix.pch */,
-				A21C4CEC17D7878600C6C3BB /* Default.png */,
-				A21C4CEE17D7878600C6C3BB /* Default@2x.png */,
-				A21C4CF017D7878600C6C3BB /* Default-568h@2x.png */,
-			);
-			name = "Supporting Files";
+			name = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,6 +259,7 @@
 				C96370671845531900975F7D /* kia.jpg in Resources */,
 				C96370631845531900975F7D /* ford.jpg in Resources */,
 				C96370611845531900975F7D /* chrysler.jpg in Resources */,
+				C963707518459D5B00975F7D /* transparent.png in Resources */,
 				C96370641845531900975F7D /* honda.jpg in Resources */,
 				A21C4CEF17D7878600C6C3BB /* Default@2x.png in Resources */,
 				C96370651845531900975F7D /* hyundai.jpg in Resources */,
@@ -253,6 +268,7 @@
 				C963706D1845531900975F7D /* subaru.jpg in Resources */,
 				A21C4CF117D7878600C6C3BB /* Default-568h@2x.png in Resources */,
 				C963706B1845531900975F7D /* nissan.jpg in Resources */,
+				C96370771845A80D00975F7D /* selected.png in Resources */,
 				C96370431845424A00975F7D /* Carbon_bg.jpg in Resources */,
 				C963706F1845531900975F7D /* volvo.jpg in Resources */,
 				A21C4CF717D7878600C6C3BB /* ViewController.xib in Resources */,
