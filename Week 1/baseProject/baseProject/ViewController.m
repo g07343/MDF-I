@@ -128,16 +128,13 @@
 }
 //default method provided by the delegate for handling cell selection
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    //NSLog(@"Row=%d", indexPath.row);
-    //NSString *temp = [[NSString alloc]initWithFormat:objectAtIndex:indexPath.row];
+{   //capture which is selected as a string
     NSString *temp = [nameArray objectAtIndex:indexPath.row];
-    //NSLog(@"%@", temp);
     
     //open detail view
      DetailViewController *detailView = [[DetailViewController alloc]initWithNibName:@"DetailViewController" bundle:nil];
     if (detailView != nil)
-    {
+    {   //this passes which manufacturer is passed to the detailViewController
         [detailView setTitleString:temp];
         [self presentModalViewController:detailView animated:TRUE];
     }
