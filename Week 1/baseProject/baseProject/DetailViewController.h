@@ -15,12 +15,15 @@
     IBOutlet UILabel *carLabel;
     IBOutlet UILabel *urlLabel;
     IBOutlet UIImageView *logo;
+    IBOutlet UIButton *webButton;
     //dynamic string variables to be overriden when user chooses something
     NSString *titleString;
     NSString *dateString;
     NSString *carString;
     NSString *urlString;
     NSString *imgSrc;
+    BOOL webOpen;
+    UIWebView *webView;
     
 }
 @property NSString *titleString;

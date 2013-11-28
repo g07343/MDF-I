@@ -30,6 +30,9 @@
     //array to hold all of the maker's logos
     picArray = [[NSMutableArray alloc]initWithObjects:@"audi.jpg", @"bmw.jpg", @"cadillac.jpg", @"chevrolet.jpg", @"chrysler.jpg", @"dodge.jpg", @"ford.jpg", @"honda.jpg", @"hyundai.jpg", @"infiniti.jpg", @"kia.jpg", @"lexus.jpg", @"mazda.jpg", @"mitsubishi.jpg", @"nissan.jpg", @"porsche.jpg", @"subaru.jpg", @"toyota.jpg", @"volvo.jpg", @"vw.jpg", nil];
     
+    //array to hold the various countries of the manufacturers
+    originArray = [[NSMutableArray alloc]initWithObjects:@"Germany", @"Germany", @"United States", @"United States", @"United States", @"United States", @"United States", @"Japan", @"South Korea", @"Japan", @"South Korea", @"Japan", @"Japan", @"Japan", @"Japan", @"Germany", @"Japan", @"Japan", @"Sweden", @"Germany", nil];
+    
     //set background of tableView to invisible to let custom bg show through
     tableView.backgroundColor = [UIColor clearColor];
     tableView.opaque = NO;
@@ -86,6 +89,8 @@
     cell.textLabel.text = (NSString*)[nameArray objectAtIndex:indexPath.row];
     //center text
     cell.textLabel.textAlignment = NSTextAlignmentCenter;
+    NSString *origin = (NSString*)[originArray objectAtIndex:indexPath.row];
+    cell.originLabel.text = [[NSString alloc] initWithFormat:@"Country of origin: %@", origin];
     //set text bg color to transparent
     cell.textLabel.backgroundColor = [UIColor clearColor];
     //set the imageView src to the temporary string
@@ -115,6 +120,8 @@
         [nameArray removeObjectAtIndex:indexPath.row];
         //remove instance of the corresponding company logo from mutable picture array
         [picArray removeObjectAtIndex:indexPath.row];
+        //remove instance of the corresponding country of origin from the mutable origin array
+        [originArray removeObjectAtIndex:indexPath.row];
         //actually remove the object from the tableview displayed to the user
         [tableView2 deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:true];
     }
@@ -133,18 +140,6 @@
     {
         [detailView setTitleString:temp];
         [self presentModalViewController:detailView animated:TRUE];
-//        if (delegate != nil)
-//        {
-//            [delegate DidSelect:temp];
-//            [self presentModalViewController:detailView animated:TRUE];
-//            //manually set the delegate, since the detailView instance hasn't been loaded for the first time yet (meaning it hasn't set itself as the delegate yet)
-//        } else {
-//            delegate = detailView;
-//            //detailView.titleString = temp;
-//            [detailView setTitleString:temp];
-//            [delegate DidSelect:temp];
-//            [self presentModalViewController:detailView animated:TRUE];
-//        }
     }
 }
 

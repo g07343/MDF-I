@@ -13,4 +13,7 @@
     IBOutlet UILabel *makerLabel;
     IBOutlet UILabel *originLabel;
 }
+
+@property UILabel *originLabel;
+
 @end

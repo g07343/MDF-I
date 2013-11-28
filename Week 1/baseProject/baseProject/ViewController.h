@@ -17,7 +17,7 @@
 @interface ViewController : UIViewController <UITableViewDelegate>
 {
     NSMutableArray *nameArray;
-    NSArray *originArray;
+    NSMutableArray *originArray;
     NSMutableArray *picArray;
     BOOL editing;
     IBOutlet UITableView *tableView;
