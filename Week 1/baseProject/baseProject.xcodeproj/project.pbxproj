@@ -14,7 +14,6 @@
 		A21C4CE717D7878600C6C3BB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A21C4CE617D7878600C6C3BB /* main.m */; };
 		A21C4CEB17D7878600C6C3BB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A21C4CEA17D7878600C6C3BB /* AppDelegate.m */; };
 		A21C4CED17D7878600C6C3BB /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = A21C4CEC17D7878600C6C3BB /* Default.png */; };
-		A21C4CEF17D7878600C6C3BB /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A21C4CEE17D7878600C6C3BB /* Default@2x.png */; };
 		A21C4CF117D7878600C6C3BB /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A21C4CF017D7878600C6C3BB /* Default-568h@2x.png */; };
 		A21C4CF417D7878600C6C3BB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A21C4CF317D7878600C6C3BB /* ViewController.m */; };
 		A21C4CF717D7878600C6C3BB /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A21C4CF517D7878600C6C3BB /* ViewController.xib */; };
@@ -45,6 +44,12 @@
 		C96370771845A80D00975F7D /* selected.png in Resources */ = {isa = PBXBuildFile; fileRef = C96370761845A80D00975F7D /* selected.png */; };
 		C963707B1845BB9000975F7D /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C96370791845BB9000975F7D /* DetailViewController.m */; };
 		C963707C1845BB9000975F7D /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C963707A1845BB9000975F7D /* DetailViewController.xib */; };
+		C9A3B4CF184995B4007ED72B /* icon_nonretina.png in Resources */ = {isa = PBXBuildFile; fileRef = C9A3B4CA184995B4007ED72B /* icon_nonretina.png */; };
+		C9A3B4D0184995B4007ED72B /* icon_retina_large.png in Resources */ = {isa = PBXBuildFile; fileRef = C9A3B4CB184995B4007ED72B /* icon_retina_large.png */; };
+		C9A3B4D1184995B4007ED72B /* icon_retina_small.png in Resources */ = {isa = PBXBuildFile; fileRef = C9A3B4CC184995B4007ED72B /* icon_retina_small.png */; };
+		C9A3B4D3184995B4007ED72B /* launch_640_1136.png in Resources */ = {isa = PBXBuildFile; fileRef = C9A3B4CE184995B4007ED72B /* launch_640_1136.png */; };
+		C9A3B4D618499644007ED72B /* launch_640_960.png in Resources */ = {isa = PBXBuildFile; fileRef = C9A3B4D518499644007ED72B /* launch_640_960.png */; };
+		C9A3B4D818499667007ED72B /* Default~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = C9A3B4D718499667007ED72B /* Default~iphone.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -93,6 +98,15 @@
 		C96370781845BB9000975F7D /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		C96370791845BB9000975F7D /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		C963707A1845BB9000975F7D /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		C9A3B4CA184995B4007ED72B /* icon_nonretina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_nonretina.png; path = "baseProject/icons:launch images/icon_nonretina.png"; sourceTree = "<group>"; };
+		C9A3B4CB184995B4007ED72B /* icon_retina_large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_retina_large.png; path = "baseProject/icons:launch images/icon_retina_large.png"; sourceTree = "<group>"; };
+		C9A3B4CC184995B4007ED72B /* icon_retina_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_retina_small.png; path = "baseProject/icons:launch images/icon_retina_small.png"; sourceTree = "<group>"; };
+		C9A3B4CD184995B4007ED72B /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = "baseProject/icons:launch images/Default.png"; sourceTree = "<group>"; };
+		C9A3B4CE184995B4007ED72B /* launch_640_1136.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = launch_640_1136.png; path = "baseProject/icons:launch images/launch_640_1136.png"; sourceTree = "<group>"; };
+		C9A3B4D518499644007ED72B /* launch_640_960.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = launch_640_960.png; path = "baseProject/icons:launch images/launch_640_960.png"; sourceTree = "<group>"; };
+		C9A3B4D718499667007ED72B /* Default~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default~iphone.png"; path = "baseProject/icons:launch images/Default~iphone.png"; sourceTree = "<group>"; };
+		C9A3B4D9184996BA007ED72B /* Default~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default~iphone.png"; path = "baseProject/icons:launch images/Default~iphone.png"; sourceTree = "<group>"; };
+		C9A3B4DB18499738007ED72B /* Default~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default~iphone.png"; path = "../../../../icons workspace/launch images/Default~iphone.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +126,8 @@
 		A21C4CCE17D7878600C6C3BB = {
 			isa = PBXGroup;
 			children = (
+				C9A3B4D4184995BB007ED72B /* icons/launch images */,
+				C9A3B4C118499296007ED72B /* icons */,
 				A21C4CE017D7878600C6C3BB /* baseProject */,
 				A21C4CD917D7878600C6C3BB /* Frameworks */,
 				A21C4CD817D7878600C6C3BB /* Products */,
@@ -200,6 +216,29 @@
 			name = images;
 			sourceTree = "<group>";
 		};
+		C9A3B4C118499296007ED72B /* icons */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = icons;
+			sourceTree = "<group>";
+		};
+		C9A3B4D4184995BB007ED72B /* icons/launch images */ = {
+			isa = PBXGroup;
+			children = (
+				C9A3B4DB18499738007ED72B /* Default~iphone.png */,
+				C9A3B4D9184996BA007ED72B /* Default~iphone.png */,
+				C9A3B4D718499667007ED72B /* Default~iphone.png */,
+				C9A3B4D518499644007ED72B /* launch_640_960.png */,
+				C9A3B4CA184995B4007ED72B /* icon_nonretina.png */,
+				C9A3B4CB184995B4007ED72B /* icon_retina_large.png */,
+				C9A3B4CC184995B4007ED72B /* icon_retina_small.png */,
+				C9A3B4CD184995B4007ED72B /* Default.png */,
+				C9A3B4CE184995B4007ED72B /* launch_640_1136.png */,
+			);
+			name = "icons/launch images";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -254,6 +293,7 @@
 				C963706C1845531900975F7D /* porsche.jpg in Resources */,
 				C96370601845531900975F7D /* chevrolet.jpg in Resources */,
 				C96370701845531900975F7D /* vw.jpg in Resources */,
+				C9A3B4D618499644007ED72B /* launch_640_960.png in Resources */,
 				C963705E1845531900975F7D /* bmw.jpg in Resources */,
 				A21C4CE517D7878600C6C3BB /* InfoPlist.strings in Resources */,
 				A21C4CED17D7878600C6C3BB /* Default.png in Resources */,
@@ -269,8 +309,8 @@
 				C96370631845531900975F7D /* ford.jpg in Resources */,
 				C96370611845531900975F7D /* chrysler.jpg in Resources */,
 				C963707518459D5B00975F7D /* transparent.png in Resources */,
+				C9A3B4CF184995B4007ED72B /* icon_nonretina.png in Resources */,
 				C96370641845531900975F7D /* honda.jpg in Resources */,
-				A21C4CEF17D7878600C6C3BB /* Default@2x.png in Resources */,
 				C96370651845531900975F7D /* hyundai.jpg in Resources */,
 				C963706A1845531900975F7D /* mitsubishi.jpg in Resources */,
 				C963706E1845531900975F7D /* toyota.jpg in Resources */,
@@ -279,7 +319,11 @@
 				C963706B1845531900975F7D /* nissan.jpg in Resources */,
 				C96370771845A80D00975F7D /* selected.png in Resources */,
 				C96370431845424A00975F7D /* Carbon_bg.jpg in Resources */,
+				C9A3B4D1184995B4007ED72B /* icon_retina_small.png in Resources */,
+				C9A3B4D0184995B4007ED72B /* icon_retina_large.png in Resources */,
 				C963706F1845531900975F7D /* volvo.jpg in Resources */,
+				C9A3B4D818499667007ED72B /* Default~iphone.png in Resources */,
+				C9A3B4D3184995B4007ED72B /* launch_640_1136.png in Resources */,
 				A21C4CF717D7878600C6C3BB /* ViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
