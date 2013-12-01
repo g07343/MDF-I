@@ -48,140 +48,140 @@
         dateLabel.text = @"1909";
         carLabel.text = @"A3";
         urlLabel.text = @"http://audi.com";
-        logo.image = [UIImage imageNamed:@"audi.jpg"];
+        logo.image = [UIImage imageNamed:@"audi.png"];
     } else if ([titleString  isEqual: @"BMW"])
     {
         nameLabel.text = titleString;
         dateLabel.text = @"1916";
         carLabel.text = @"335i";
         urlLabel.text = @"http://bmw.com";
-        logo.image = [UIImage imageNamed:@"bmw.jpg"];
+        logo.image = [UIImage imageNamed:@"bmw.png"];
     } else if ([titleString  isEqual: @"Cadillac"])
     {
         nameLabel.text = titleString;
         dateLabel.text = @"1902";
         carLabel.text = @"CTS";
         urlLabel.text = @"http://cadillac.com";
-        logo.image = [UIImage imageNamed:@"cadillac.jpg"];
+        logo.image = [UIImage imageNamed:@"cadillac.png"];
     } else if ([titleString  isEqual: @"Chevrolet"])
     {
         nameLabel.text = titleString;
         dateLabel.text = @"1911";
         carLabel.text = @"Cruze";
         urlLabel.text = @"http://chevrolet.com";
-        logo.image = [UIImage imageNamed:@"chevrolet.jpg"];
+        logo.image = [UIImage imageNamed:@"chevrolet.png"];
     } else if ([titleString  isEqual: @"Chrysler"])
     {
         nameLabel.text = titleString;
         dateLabel.text = @"1925";
         carLabel.text = @"200";
         urlLabel.text = @"http://chrysler.com";
-        logo.image = [UIImage imageNamed:@"chrysler.jpg"];
+        logo.image = [UIImage imageNamed:@"chrysler.png"];
     } else if ([titleString  isEqual: @"Dodge"])
     {
         nameLabel.text = titleString;
         dateLabel.text = @"1914";
         carLabel.text = @"Durango";
         urlLabel.text = @"http://dodge.com";
-        logo.image = [UIImage imageNamed:@"dodge.jpg"];
+        logo.image = [UIImage imageNamed:@"dodge.png"];
     } else if ([titleString  isEqual: @"Ford"])
     {
         nameLabel.text = titleString;
         dateLabel.text = @"1903";
         carLabel.text = @"Focus";
         urlLabel.text = @"http://ford.com";
-        logo.image = [UIImage imageNamed:@"ford.jpg"];
+        logo.image = [UIImage imageNamed:@"ford.png"];
     } else if ([titleString  isEqual: @"Honda"])
     {
         nameLabel.text = titleString;
         dateLabel.text = @"1948";
         carLabel.text = @"Civic";
         urlLabel.text = @"http://honda.com";
-        logo.image = [UIImage imageNamed:@"honda.jpg"];
+        logo.image = [UIImage imageNamed:@"honda.png"];
     } else if ([titleString  isEqual: @"Hyundai"])
     {
         nameLabel.text = titleString;
         dateLabel.text = @"1967";
         carLabel.text = @"Elantra";
         urlLabel.text = @"http://hyundaiusa.com";
-        logo.image = [UIImage imageNamed:@"hyundai.jpg"];
+        logo.image = [UIImage imageNamed:@"hyundai.png"];
     } else if ([titleString  isEqual: @"Infiniti"])
     {
         nameLabel.text = titleString;
         dateLabel.text = @"1989";
         carLabel.text = @"Q50";
         urlLabel.text = @"http://infiniti.com";
-        logo.image = [UIImage imageNamed:@"infiniti.jpg"];
+        logo.image = [UIImage imageNamed:@"infiniti.png"];
     } else if ([titleString  isEqual: @"Kia"])
     {
         nameLabel.text = titleString;
         dateLabel.text = @"1944";
         carLabel.text = @"Optima";
         urlLabel.text = @"http://kia.com";
-        logo.image = [UIImage imageNamed:@"kia.jpg"];
+        logo.image = [UIImage imageNamed:@"kia.png"];
     } else if ([titleString  isEqual: @"Lexus"])
     {
         nameLabel.text = titleString;
         dateLabel.text = @"1989";
         carLabel.text = @"ES250";
         urlLabel.text = @"http://lexus.com";
-        logo.image = [UIImage imageNamed:@"lexus.jpg"];
+        logo.image = [UIImage imageNamed:@"lexus.png"];
     } else if ([titleString  isEqual: @"Mazda"])
     {
         nameLabel.text = titleString;
         dateLabel.text = @"1920";
         carLabel.text = @"CX-5";
         urlLabel.text = @"http://mazdausa.com";
-        logo.image = [UIImage imageNamed:@"mazda.jpg"];
+        logo.image = [UIImage imageNamed:@"mazda.png"];
     } else if ([titleString  isEqual: @"Mitsubishi"])
     {
         nameLabel.text = titleString;
         dateLabel.text = @"1870 (parent company)";
         carLabel.text = @"Outlander";
         urlLabel.text = @"http://mitsubishicars.com";
-        logo.image = [UIImage imageNamed:@"mitsubishi.jpg"];
+        logo.image = [UIImage imageNamed:@"mitsubishi.png"];
     } else if ([titleString  isEqual: @"Nissan"])
     {
         nameLabel.text = titleString;
         dateLabel.text = @"1933";
         carLabel.text = @"Altima";
         urlLabel.text = @"http://nissanusa.com";
-        logo.image = [UIImage imageNamed:@"nissan.jpg"];
+        logo.image = [UIImage imageNamed:@"nissan.png"];
     } else if ([titleString  isEqual: @"Porsche"])
     {
         nameLabel.text = titleString;
         dateLabel.text = @"1931";
         carLabel.text = @"Panamera";
         urlLabel.text = @"http://porsche.com";
-        logo.image = [UIImage imageNamed:@"porsche.jpg"];
+        logo.image = [UIImage imageNamed:@"porsche.png"];
     } else if ([titleString  isEqual: @"Subaru"])
     {
         nameLabel.text = titleString;
         dateLabel.text = @"1954";
         carLabel.text = @"Forester";
         urlLabel.text = @"http://subaru.com";
-        logo.image = [UIImage imageNamed:@"subaru.jpg"];
+        logo.image = [UIImage imageNamed:@"subaru.png"];
     } else if ([titleString  isEqual: @"Toyota"])
     {
         nameLabel.text = titleString;
         dateLabel.text = @"1937";
         carLabel.text = @"Camry";
         urlLabel.text = @"http://toyota.com";
-        logo.image = [UIImage imageNamed:@"toyota.jpg"];
+        logo.image = [UIImage imageNamed:@"toyota.png"];
     } else if ([titleString  isEqual: @"Volvo"])
     {
         nameLabel.text = titleString;
         dateLabel.text = @"1927";
         carLabel.text = @"XC90";
         urlLabel.text = @"http://volvocars.com";
-        logo.image = [UIImage imageNamed:@"volvo.jpg"];
+        logo.image = [UIImage imageNamed:@"volvo.png"];
     } else if ([titleString  isEqual: @"VW"])
     {
         nameLabel.text = titleString;
         dateLabel.text = @"1937";
         carLabel.text = @"Jetta";
         urlLabel.text = @"http://vw.com";
-        logo.image = [UIImage imageNamed:@"vw.jpg"];
+        logo.image = [UIImage imageNamed:@"vw.png"];
     }
 }
 

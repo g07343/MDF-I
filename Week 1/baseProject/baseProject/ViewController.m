@@ -28,7 +28,7 @@
     nameArray = [[NSMutableArray alloc]initWithObjects:@"Audi", @"BMW", @"Cadillac", @"Chevrolet", @"Chrysler", @"Dodge", @"Ford", @"Honda", @"Hyundai", @"Infiniti", @"Kia", @"Lexus", @"Mazda", @"Mitsubishi", @"Nissan", @"Porsche", @"Subaru", @"Toyota", @"Volvo", @"VW", nil];
     
     //array to hold all of the maker's logos
-    picArray = [[NSMutableArray alloc]initWithObjects:@"audi.jpg", @"bmw.jpg", @"cadillac.jpg", @"chevrolet.jpg", @"chrysler.jpg", @"dodge.jpg", @"ford.jpg", @"honda.jpg", @"hyundai.jpg", @"infiniti.jpg", @"kia.jpg", @"lexus.jpg", @"mazda.jpg", @"mitsubishi.jpg", @"nissan.jpg", @"porsche.jpg", @"subaru.jpg", @"toyota.jpg", @"volvo.jpg", @"vw.jpg", nil];
+    picArray = [[NSMutableArray alloc]initWithObjects:@"audi.png", @"bmw.png", @"cadillac.png", @"chevrolet.png", @"chrysler.png", @"dodge.png", @"ford.png", @"honda.png", @"hyundai.png", @"infiniti.png", @"kia.png", @"lexus.png", @"mazda.png", @"mitsubishi.png", @"nissan.png", @"porsche.png", @"subaru.png", @"toyota.png", @"volvo.png", @"vw.png", nil];
     
     //array to hold the various countries of the manufacturers
     originArray = [[NSMutableArray alloc]initWithObjects:@"Germany", @"Germany", @"United States", @"United States", @"United States", @"United States", @"United States", @"Japan", @"South Korea", @"Japan", @"South Korea", @"Japan", @"Japan", @"Japan", @"Japan", @"Germany", @"Japan", @"Japan", @"Sweden", @"Germany", nil];
