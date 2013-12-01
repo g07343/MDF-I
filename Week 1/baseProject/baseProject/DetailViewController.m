@@ -41,7 +41,7 @@
 }
 
 - (void)viewWillAppear:(BOOL)animated
-{
+{//check titleString and populate dynamic labels accordingly
     if ([titleString  isEqual: @"Audi"])
     {
         nameLabel.text = titleString;
@@ -203,19 +203,23 @@
         {
             webView = [[UIWebView alloc] init];
             if (webView != nil)
-            {
-                [webView setFrame:CGRectMake(0, 0, 320, 500)];
+            {   //create webView frame
+                [webView setFrame:CGRectMake(0, 20.0f, 320.0f, 420.0f)];
+                //load website from the urlLabel's string
                 [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:urlLabel.text]]];
+                //set initial scale of loaded webpage to fit screen
+                webView.scalesPageToFit = YES;
+                //give the webView a tag that can be referenced later to close it
                 webView.tag = 12;
             }
-            
+            //check webOpen bool to 'toggle' opening and closing the webView
             if (webOpen == false)
             {
                 webOpen = true;
                 [sender setTitle:@"Close" forState:UIControlStateNormal];
                 [[self view] addSubview:webView];
             } else if (webOpen == true)
-            {
+            {   //reference webView's tag in order to close it
                 [[self.view viewWithTag:12] removeFromSuperview];
                 webOpen = false;
                 [sender setTitle:@"Open?" forState:UIControlStateNormal];
