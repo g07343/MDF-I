@@ -8,16 +8,25 @@
 
 #import "AppDelegate.h"
 
-#import "ViewController.h"
+#import "ViewController1.h"
+#import "ViewController2.h"
+#import "ViewController3.h"
 
 @implementation AppDelegate
+
+@synthesize window = _window;
+@synthesize tabBarController = _tabBarController;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    self.viewController = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
-    self.window.rootViewController = self.viewController;
+    UIViewController *viewController1 = [[ViewController1 alloc] initWithNibName:@"ViewController1" bundle:nil];
+    
+    UIViewController *viewController2 = [[ViewController2 alloc] initWithNibName:@"ViewController2" bundle:nil];
+    UIViewController *viewController3 = [[ViewController3 alloc] initWithNibName:@"ViewController3" bundle:nil];
+    self.tabBarController = [[UITabBarController alloc] init];
+    self.tabBarController.viewControllers = [NSArray arrayWithObjects:viewController1, viewController2, viewController3, nil];
+    self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];
     return YES;
 }
