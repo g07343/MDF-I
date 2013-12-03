@@ -30,6 +30,7 @@
 		C9BB0D26184D8AE6006DA043 /* MoreInfo2.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9BB0D24184D8AE6006DA043 /* MoreInfo2.xib */; };
 		C9BB0D2B184D8EAB006DA043 /* SelectedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C9BB0D29184D8EAB006DA043 /* SelectedCell.m */; };
 		C9BB0D2C184D8EAB006DA043 /* SelectedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9BB0D2A184D8EAB006DA043 /* SelectedCell.xib */; };
+		C9BB0D30184D96C6006DA043 /* CustomObject.m in Sources */ = {isa = PBXBuildFile; fileRef = C9BB0D2F184D96C6006DA043 /* CustomObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +67,8 @@
 		C9BB0D28184D8EAB006DA043 /* SelectedCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectedCell.h; sourceTree = "<group>"; };
 		C9BB0D29184D8EAB006DA043 /* SelectedCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectedCell.m; sourceTree = "<group>"; };
 		C9BB0D2A184D8EAB006DA043 /* SelectedCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectedCell.xib; sourceTree = "<group>"; };
+		C9BB0D2E184D96C6006DA043 /* CustomObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomObject.h; sourceTree = "<group>"; };
+		C9BB0D2F184D96C6006DA043 /* CustomObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +177,7 @@
 				C9BB0D0F184D7D7C006DA043 /* ViewController3.h */,
 				C9BB0D10184D7D7C006DA043 /* ViewController3.m */,
 				C9BB0D11184D7D7C006DA043 /* ViewController3.xib */,
+				C9BB0D2D184D96A4006DA043 /* CustomObject */,
 			);
 			name = "View3 Files";
 			sourceTree = "<group>";
@@ -199,6 +203,15 @@
 				C9BB0D2A184D8EAB006DA043 /* SelectedCell.xib */,
 			);
 			name = "Selected Cell View";
+			sourceTree = "<group>";
+		};
+		C9BB0D2D184D96A4006DA043 /* CustomObject */ = {
+			isa = PBXGroup;
+			children = (
+				C9BB0D2E184D96C6006DA043 /* CustomObject.h */,
+				C9BB0D2F184D96C6006DA043 /* CustomObject.m */,
+			);
+			name = CustomObject;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,6 +294,7 @@
 				A21C4CEB17D7878600C6C3BB /* AppDelegate.m in Sources */,
 				A21C4CF417D7878600C6C3BB /* ViewController1.m in Sources */,
 				C9BB0D12184D7D7C006DA043 /* ViewController3.m in Sources */,
+				C9BB0D30184D96C6006DA043 /* CustomObject.m in Sources */,
 				C9BB0D25184D8AE6006DA043 /* MoreInfo2.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
