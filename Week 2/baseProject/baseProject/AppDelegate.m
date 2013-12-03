@@ -21,11 +21,11 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     UIViewController *viewController1 = [[ViewController1 alloc] initWithNibName:@"ViewController1" bundle:nil];
-    
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:viewController1];
     UIViewController *viewController2 = [[ViewController2 alloc] initWithNibName:@"ViewController2" bundle:nil];
     UIViewController *viewController3 = [[ViewController3 alloc] initWithNibName:@"ViewController3" bundle:nil];
     self.tabBarController = [[UITabBarController alloc] init];
-    self.tabBarController.viewControllers = [NSArray arrayWithObjects:viewController1, viewController2, viewController3, nil];
+    self.tabBarController.viewControllers = [NSArray arrayWithObjects:navController, viewController2, viewController3, nil];
     self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];
     return YES;

@@ -24,6 +24,10 @@
 		C9BB0D13184D7D7C006DA043 /* ViewController3.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9BB0D11184D7D7C006DA043 /* ViewController3.xib */; };
 		C9BB0D16184D7FE6006DA043 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = C9BB0D14184D7FE6006DA043 /* first.png */; };
 		C9BB0D17184D7FE6006DA043 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = C9BB0D15184D7FE6006DA043 /* second.png */; };
+		C9BB0D20184D8AD8006DA043 /* MoreInfo1.m in Sources */ = {isa = PBXBuildFile; fileRef = C9BB0D1E184D8AD8006DA043 /* MoreInfo1.m */; };
+		C9BB0D21184D8AD8006DA043 /* MoreInfo1.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9BB0D1F184D8AD8006DA043 /* MoreInfo1.xib */; };
+		C9BB0D25184D8AE6006DA043 /* MoreInfo2.m in Sources */ = {isa = PBXBuildFile; fileRef = C9BB0D23184D8AE6006DA043 /* MoreInfo2.m */; };
+		C9BB0D26184D8AE6006DA043 /* MoreInfo2.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9BB0D24184D8AE6006DA043 /* MoreInfo2.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +55,12 @@
 		C9BB0D11184D7D7C006DA043 /* ViewController3.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController3.xib; sourceTree = "<group>"; };
 		C9BB0D14184D7FE6006DA043 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = first.png; path = "UI Icons/first.png"; sourceTree = "<group>"; };
 		C9BB0D15184D7FE6006DA043 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = second.png; path = "UI Icons/second.png"; sourceTree = "<group>"; };
+		C9BB0D1D184D8AD8006DA043 /* MoreInfo1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreInfo1.h; sourceTree = "<group>"; };
+		C9BB0D1E184D8AD8006DA043 /* MoreInfo1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreInfo1.m; sourceTree = "<group>"; };
+		C9BB0D1F184D8AD8006DA043 /* MoreInfo1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MoreInfo1.xib; sourceTree = "<group>"; };
+		C9BB0D22184D8AE6006DA043 /* MoreInfo2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreInfo2.h; sourceTree = "<group>"; };
+		C9BB0D23184D8AE6006DA043 /* MoreInfo2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreInfo2.m; sourceTree = "<group>"; };
+		C9BB0D24184D8AE6006DA043 /* MoreInfo2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MoreInfo2.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,16 +110,10 @@
 				C9BB0D18184D7FEF006DA043 /* icons */,
 				A21C4CE917D7878600C6C3BB /* AppDelegate.h */,
 				A21C4CEA17D7878600C6C3BB /* AppDelegate.m */,
-				A21C4CF217D7878600C6C3BB /* ViewController1.h */,
-				A21C4CF317D7878600C6C3BB /* ViewController1.m */,
-				A21C4CF517D7878600C6C3BB /* ViewController1.xib */,
+				C9BB0D19184D8949006DA043 /* View1 Files/Nav Control Views */,
 				A21C4CE117D7878600C6C3BB /* Supporting Files */,
-				C9BB0D0A184D7D6D006DA043 /* ViewController2.h */,
-				C9BB0D0B184D7D6D006DA043 /* ViewController2.m */,
-				C9BB0D0C184D7D6D006DA043 /* ViewController2.xib */,
-				C9BB0D0F184D7D7C006DA043 /* ViewController3.h */,
-				C9BB0D10184D7D7C006DA043 /* ViewController3.m */,
-				C9BB0D11184D7D7C006DA043 /* ViewController3.xib */,
+				C9BB0D1A184D8954006DA043 /* View2 Files */,
+				C9BB0D1B184D895E006DA043 /* View3 Files */,
 			);
 			path = baseProject;
 			sourceTree = "<group>";
@@ -135,6 +139,50 @@
 				C9BB0D15184D7FE6006DA043 /* second.png */,
 			);
 			name = icons;
+			sourceTree = "<group>";
+		};
+		C9BB0D19184D8949006DA043 /* View1 Files/Nav Control Views */ = {
+			isa = PBXGroup;
+			children = (
+				A21C4CF217D7878600C6C3BB /* ViewController1.h */,
+				A21C4CF317D7878600C6C3BB /* ViewController1.m */,
+				A21C4CF517D7878600C6C3BB /* ViewController1.xib */,
+				C9BB0D1C184D8A9A006DA043 /* Additional Views */,
+			);
+			name = "View1 Files/Nav Control Views";
+			sourceTree = "<group>";
+		};
+		C9BB0D1A184D8954006DA043 /* View2 Files */ = {
+			isa = PBXGroup;
+			children = (
+				C9BB0D0A184D7D6D006DA043 /* ViewController2.h */,
+				C9BB0D0B184D7D6D006DA043 /* ViewController2.m */,
+				C9BB0D0C184D7D6D006DA043 /* ViewController2.xib */,
+			);
+			name = "View2 Files";
+			sourceTree = "<group>";
+		};
+		C9BB0D1B184D895E006DA043 /* View3 Files */ = {
+			isa = PBXGroup;
+			children = (
+				C9BB0D0F184D7D7C006DA043 /* ViewController3.h */,
+				C9BB0D10184D7D7C006DA043 /* ViewController3.m */,
+				C9BB0D11184D7D7C006DA043 /* ViewController3.xib */,
+			);
+			name = "View3 Files";
+			sourceTree = "<group>";
+		};
+		C9BB0D1C184D8A9A006DA043 /* Additional Views */ = {
+			isa = PBXGroup;
+			children = (
+				C9BB0D1D184D8AD8006DA043 /* MoreInfo1.h */,
+				C9BB0D1E184D8AD8006DA043 /* MoreInfo1.m */,
+				C9BB0D1F184D8AD8006DA043 /* MoreInfo1.xib */,
+				C9BB0D22184D8AE6006DA043 /* MoreInfo2.h */,
+				C9BB0D23184D8AE6006DA043 /* MoreInfo2.m */,
+				C9BB0D24184D8AE6006DA043 /* MoreInfo2.xib */,
+			);
+			name = "Additional Views";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,9 +238,11 @@
 			files = (
 				A21C4CE517D7878600C6C3BB /* InfoPlist.strings in Resources */,
 				A21C4CED17D7878600C6C3BB /* Default.png in Resources */,
+				C9BB0D21184D8AD8006DA043 /* MoreInfo1.xib in Resources */,
 				A21C4CEF17D7878600C6C3BB /* Default@2x.png in Resources */,
 				C9BB0D0E184D7D6D006DA043 /* ViewController2.xib in Resources */,
 				C9BB0D16184D7FE6006DA043 /* first.png in Resources */,
+				C9BB0D26184D8AE6006DA043 /* MoreInfo2.xib in Resources */,
 				A21C4CF117D7878600C6C3BB /* Default-568h@2x.png in Resources */,
 				C9BB0D17184D7FE6006DA043 /* second.png in Resources */,
 				C9BB0D13184D7D7C006DA043 /* ViewController3.xib in Resources */,
@@ -207,11 +257,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9BB0D20184D8AD8006DA043 /* MoreInfo1.m in Sources */,
 				A21C4CE717D7878600C6C3BB /* main.m in Sources */,
 				C9BB0D0D184D7D6D006DA043 /* ViewController2.m in Sources */,
 				A21C4CEB17D7878600C6C3BB /* AppDelegate.m in Sources */,
 				A21C4CF417D7878600C6C3BB /* ViewController1.m in Sources */,
 				C9BB0D12184D7D7C006DA043 /* ViewController3.m in Sources */,
+				C9BB0D25184D8AE6006DA043 /* MoreInfo2.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

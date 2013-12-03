@@ -9,5 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController1 : UIViewController
+{
+    IBOutlet UIButton *info1;
+    IBOutlet UIButton *info2;
+}
+
+-(IBAction)onClick:(id)sender;
 
 @end
