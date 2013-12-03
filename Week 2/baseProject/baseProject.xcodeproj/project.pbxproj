@@ -91,6 +91,7 @@
 				A21C4CE017D7878600C6C3BB /* baseProject */,
 				A21C4CD917D7878600C6C3BB /* Frameworks */,
 				A21C4CD817D7878600C6C3BB /* Products */,
+				A21C4CE117D7878600C6C3BB /* Supporting Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -119,7 +120,6 @@
 				A21C4CE917D7878600C6C3BB /* AppDelegate.h */,
 				A21C4CEA17D7878600C6C3BB /* AppDelegate.m */,
 				C9BB0D19184D8949006DA043 /* View1 Files/Nav Control Views */,
-				A21C4CE117D7878600C6C3BB /* Supporting Files */,
 				C9BB0D1A184D8954006DA043 /* View2 Files/TableView Files */,
 				C9BB0D1B184D895E006DA043 /* View3 Files */,
 			);
@@ -138,6 +138,7 @@
 				A21C4CF017D7878600C6C3BB /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			path = baseProject;
 			sourceTree = "<group>";
 		};
 		C9BB0D18184D7FEF006DA043 /* icons */ = {

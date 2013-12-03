@@ -10,7 +10,7 @@
 #import "ViewController2.h"
 @interface SelectedCell : UIViewController <DetailDelegate>
 {
-
+    IBOutlet UILabel *titleLabel;
 }
 
 -(IBAction)onClick:(id)sender;

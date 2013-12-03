@@ -7,7 +7,7 @@
 //
 
 #import "MoreInfo1.h"
-
+#import "MoreInfo2.h"
 @interface MoreInfo1 ()
 
 @end
@@ -33,6 +33,15 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(IBAction)onClick:(id)sender
+{
+    MoreInfo2 *moreInfo2 = [[MoreInfo2 alloc]initWithNibName:@"MoreInfo2" bundle:nil];
+    if (moreInfo2 != nil)
+    {
+        [self.navigationController pushViewController:moreInfo2 animated:true];
+    }
 }
 
 @end

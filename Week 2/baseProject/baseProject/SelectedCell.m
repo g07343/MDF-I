@@ -25,10 +25,14 @@
     return self;
 }
 
+-(void)viewWillAppear:(BOOL)animated
+{
+    titleLabel.text = titleString;
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    NSLog(@"%@", titleString);
     // Do any additional setup after loading the view from its nib.
 }
 
