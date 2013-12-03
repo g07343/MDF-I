@@ -8,6 +8,18 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol DetailDelegate <NSObject>
+
+
+
+@end
+
 @interface ViewController2 : UIViewController
+{
+    NSMutableArray *detailArray;
+    IBOutlet UITableView *tableView;
+}
+
+@property (strong, nonatomic) id<DetailDelegate> delegate;
 
 @end

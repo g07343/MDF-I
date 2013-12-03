@@ -28,6 +28,8 @@
 		C9BB0D21184D8AD8006DA043 /* MoreInfo1.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9BB0D1F184D8AD8006DA043 /* MoreInfo1.xib */; };
 		C9BB0D25184D8AE6006DA043 /* MoreInfo2.m in Sources */ = {isa = PBXBuildFile; fileRef = C9BB0D23184D8AE6006DA043 /* MoreInfo2.m */; };
 		C9BB0D26184D8AE6006DA043 /* MoreInfo2.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9BB0D24184D8AE6006DA043 /* MoreInfo2.xib */; };
+		C9BB0D2B184D8EAB006DA043 /* SelectedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C9BB0D29184D8EAB006DA043 /* SelectedCell.m */; };
+		C9BB0D2C184D8EAB006DA043 /* SelectedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9BB0D2A184D8EAB006DA043 /* SelectedCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +63,9 @@
 		C9BB0D22184D8AE6006DA043 /* MoreInfo2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreInfo2.h; sourceTree = "<group>"; };
 		C9BB0D23184D8AE6006DA043 /* MoreInfo2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreInfo2.m; sourceTree = "<group>"; };
 		C9BB0D24184D8AE6006DA043 /* MoreInfo2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MoreInfo2.xib; sourceTree = "<group>"; };
+		C9BB0D28184D8EAB006DA043 /* SelectedCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectedCell.h; sourceTree = "<group>"; };
+		C9BB0D29184D8EAB006DA043 /* SelectedCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectedCell.m; sourceTree = "<group>"; };
+		C9BB0D2A184D8EAB006DA043 /* SelectedCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectedCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,7 +117,7 @@
 				A21C4CEA17D7878600C6C3BB /* AppDelegate.m */,
 				C9BB0D19184D8949006DA043 /* View1 Files/Nav Control Views */,
 				A21C4CE117D7878600C6C3BB /* Supporting Files */,
-				C9BB0D1A184D8954006DA043 /* View2 Files */,
+				C9BB0D1A184D8954006DA043 /* View2 Files/TableView Files */,
 				C9BB0D1B184D895E006DA043 /* View3 Files */,
 			);
 			path = baseProject;
@@ -152,14 +157,15 @@
 			name = "View1 Files/Nav Control Views";
 			sourceTree = "<group>";
 		};
-		C9BB0D1A184D8954006DA043 /* View2 Files */ = {
+		C9BB0D1A184D8954006DA043 /* View2 Files/TableView Files */ = {
 			isa = PBXGroup;
 			children = (
 				C9BB0D0A184D7D6D006DA043 /* ViewController2.h */,
 				C9BB0D0B184D7D6D006DA043 /* ViewController2.m */,
 				C9BB0D0C184D7D6D006DA043 /* ViewController2.xib */,
+				C9BB0D27184D8E8B006DA043 /* Selected Cell View */,
 			);
-			name = "View2 Files";
+			name = "View2 Files/TableView Files";
 			sourceTree = "<group>";
 		};
 		C9BB0D1B184D895E006DA043 /* View3 Files */ = {
@@ -183,6 +189,16 @@
 				C9BB0D24184D8AE6006DA043 /* MoreInfo2.xib */,
 			);
 			name = "Additional Views";
+			sourceTree = "<group>";
+		};
+		C9BB0D27184D8E8B006DA043 /* Selected Cell View */ = {
+			isa = PBXGroup;
+			children = (
+				C9BB0D28184D8EAB006DA043 /* SelectedCell.h */,
+				C9BB0D29184D8EAB006DA043 /* SelectedCell.m */,
+				C9BB0D2A184D8EAB006DA043 /* SelectedCell.xib */,
+			);
+			name = "Selected Cell View";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,6 +258,7 @@
 				A21C4CEF17D7878600C6C3BB /* Default@2x.png in Resources */,
 				C9BB0D0E184D7D6D006DA043 /* ViewController2.xib in Resources */,
 				C9BB0D16184D7FE6006DA043 /* first.png in Resources */,
+				C9BB0D2C184D8EAB006DA043 /* SelectedCell.xib in Resources */,
 				C9BB0D26184D8AE6006DA043 /* MoreInfo2.xib in Resources */,
 				A21C4CF117D7878600C6C3BB /* Default-568h@2x.png in Resources */,
 				C9BB0D17184D7FE6006DA043 /* second.png in Resources */,
@@ -259,6 +276,7 @@
 			files = (
 				C9BB0D20184D8AD8006DA043 /* MoreInfo1.m in Sources */,
 				A21C4CE717D7878600C6C3BB /* main.m in Sources */,
+				C9BB0D2B184D8EAB006DA043 /* SelectedCell.m in Sources */,
 				C9BB0D0D184D7D6D006DA043 /* ViewController2.m in Sources */,
 				A21C4CEB17D7878600C6C3BB /* AppDelegate.m in Sources */,
 				A21C4CF417D7878600C6C3BB /* ViewController1.m in Sources */,
@@ -350,6 +368,7 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "baseProject/baseProject-Prefix.pch";
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
 				INFOPLIST_FILE = "baseProject/baseProject-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -361,6 +380,7 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "baseProject/baseProject-Prefix.pch";
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
 				INFOPLIST_FILE = "baseProject/baseProject-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
