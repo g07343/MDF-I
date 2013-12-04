@@ -41,6 +41,13 @@
 		C9BB0D41184ED828006DA043 /* randall.png in Resources */ = {isa = PBXBuildFile; fileRef = C9BB0D40184ED828006DA043 /* randall.png */; };
 		C9BB0D43184ED875006DA043 /* hardscrabble.png in Resources */ = {isa = PBXBuildFile; fileRef = C9BB0D42184ED875006DA043 /* hardscrabble.png */; };
 		C9BB0D45184ED8E8006DA043 /* worthington.png in Resources */ = {isa = PBXBuildFile; fileRef = C9BB0D44184ED8E8006DA043 /* worthington.png */; };
+		C9BB0D4A184EF046006DA043 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9BB0D48184EF046006DA043 /* ViewController.m */; };
+		C9BB0D4B184EF046006DA043 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9BB0D49184EF046006DA043 /* ViewController.xib */; };
+		C9BB0D51184EF715006DA043 /* buscemi.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C9BB0D4C184EF715006DA043 /* buscemi.jpg */; };
+		C9BB0D52184EF715006DA043 /* crystal.png in Resources */ = {isa = PBXBuildFile; fileRef = C9BB0D4D184EF715006DA043 /* crystal.png */; };
+		C9BB0D53184EF715006DA043 /* fillion.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C9BB0D4E184EF715006DA043 /* fillion.jpg */; };
+		C9BB0D54184EF715006DA043 /* goodman.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C9BB0D4F184EF715006DA043 /* goodman.jpg */; };
+		C9BB0D55184EF715006DA043 /* mirren.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C9BB0D50184EF715006DA043 /* mirren.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -89,6 +96,14 @@
 		C9BB0D40184ED828006DA043 /* randall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = randall.png; path = "image assets/randall.png"; sourceTree = "<group>"; };
 		C9BB0D42184ED875006DA043 /* hardscrabble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = hardscrabble.png; path = "image assets/hardscrabble.png"; sourceTree = "<group>"; };
 		C9BB0D44184ED8E8006DA043 /* worthington.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = worthington.png; path = "image assets/worthington.png"; sourceTree = "<group>"; };
+		C9BB0D47184EF046006DA043 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C9BB0D48184EF046006DA043 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C9BB0D49184EF046006DA043 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		C9BB0D4C184EF715006DA043 /* buscemi.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = buscemi.jpg; path = "image assets/buscemi.jpg"; sourceTree = "<group>"; };
+		C9BB0D4D184EF715006DA043 /* crystal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = crystal.png; path = "image assets/crystal.png"; sourceTree = "<group>"; };
+		C9BB0D4E184EF715006DA043 /* fillion.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = fillion.jpg; path = "image assets/fillion.jpg"; sourceTree = "<group>"; };
+		C9BB0D4F184EF715006DA043 /* goodman.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = goodman.jpg; path = "image assets/goodman.jpg"; sourceTree = "<group>"; };
+		C9BB0D50184EF715006DA043 /* mirren.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = mirren.jpg; path = "image assets/mirren.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,6 +214,7 @@
 				C9BB0D0F184D7D7C006DA043 /* ViewController3.h */,
 				C9BB0D10184D7D7C006DA043 /* ViewController3.m */,
 				C9BB0D11184D7D7C006DA043 /* ViewController3.xib */,
+				C9BB0D46184EF030006DA043 /* popUp View */,
 				C9BB0D2D184D96A4006DA043 /* CustomObject */,
 			);
 			name = "View3 Files";
@@ -239,6 +255,11 @@
 		C9BB0D31184EC6CC006DA043 /* image assets */ = {
 			isa = PBXGroup;
 			children = (
+				C9BB0D4C184EF715006DA043 /* buscemi.jpg */,
+				C9BB0D4D184EF715006DA043 /* crystal.png */,
+				C9BB0D4E184EF715006DA043 /* fillion.jpg */,
+				C9BB0D4F184EF715006DA043 /* goodman.jpg */,
+				C9BB0D50184EF715006DA043 /* mirren.jpg */,
 				C9BB0D44184ED8E8006DA043 /* worthington.png */,
 				C9BB0D42184ED875006DA043 /* hardscrabble.png */,
 				C9BB0D40184ED828006DA043 /* randall.png */,
@@ -252,6 +273,16 @@
 			);
 			name = "image assets";
 			path = baseProject;
+			sourceTree = "<group>";
+		};
+		C9BB0D46184EF030006DA043 /* popUp View */ = {
+			isa = PBXGroup;
+			children = (
+				C9BB0D47184EF046006DA043 /* ViewController.h */,
+				C9BB0D48184EF046006DA043 /* ViewController.m */,
+				C9BB0D49184EF046006DA043 /* ViewController.xib */,
+			);
+			name = "popUp View";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -306,8 +337,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9BB0D33184EC6E0006DA043 /* logo.png in Resources */,
+				C9BB0D53184EF715006DA043 /* fillion.jpg in Resources */,
+				C9BB0D55184EF715006DA043 /* mirren.jpg in Resources */,
 				A21C4CE517D7878600C6C3BB /* InfoPlist.strings in Resources */,
 				C9BB0D39184ECC25006DA043 /* bg.png in Resources */,
+				C9BB0D52184EF715006DA043 /* crystal.png in Resources */,
 				A21C4CED17D7878600C6C3BB /* Default.png in Resources */,
 				C9BB0D43184ED875006DA043 /* hardscrabble.png in Resources */,
 				C9BB0D3B184ECD93006DA043 /* Oozma-Kappa.jpg in Resources */,
@@ -315,6 +349,7 @@
 				C9BB0D21184D8AD8006DA043 /* MoreInfo1.xib in Resources */,
 				A21C4CEF17D7878600C6C3BB /* Default@2x.png in Resources */,
 				C9BB0D37184ECAE5006DA043 /* mike_sully_meet.jpg in Resources */,
+				C9BB0D51184EF715006DA043 /* buscemi.jpg in Resources */,
 				C9BB0D0E184D7D6D006DA043 /* ViewController2.xib in Resources */,
 				C9BB0D16184D7FE6006DA043 /* first.png in Resources */,
 				C9BB0D2C184D8EAB006DA043 /* SelectedCell.xib in Resources */,
@@ -327,6 +362,8 @@
 				C9BB0D17184D7FE6006DA043 /* second.png in Resources */,
 				C9BB0D13184D7D7C006DA043 /* ViewController3.xib in Resources */,
 				A21C4CF717D7878600C6C3BB /* ViewController1.xib in Resources */,
+				C9BB0D54184EF715006DA043 /* goodman.jpg in Resources */,
+				C9BB0D4B184EF046006DA043 /* ViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +378,7 @@
 				A21C4CE717D7878600C6C3BB /* main.m in Sources */,
 				C9BB0D2B184D8EAB006DA043 /* SelectedCell.m in Sources */,
 				C9BB0D0D184D7D6D006DA043 /* ViewController2.m in Sources */,
+				C9BB0D4A184EF046006DA043 /* ViewController.m in Sources */,
 				A21C4CEB17D7878600C6C3BB /* AppDelegate.m in Sources */,
 				A21C4CF417D7878600C6C3BB /* ViewController1.m in Sources */,
 				C9BB0D12184D7D7C006DA043 /* ViewController3.m in Sources */,

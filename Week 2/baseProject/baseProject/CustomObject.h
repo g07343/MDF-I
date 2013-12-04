@@ -10,12 +10,16 @@
 
 @interface CustomObject : NSObject
 {
-    NSString *string1;
-    NSString *string2;
-    NSString *string3;
+    NSArray *monsterArray;
+    NSArray *test;
+    NSString *selectedImage;
+    NSString *actorName;
+    NSString *actorImage;
 }
 +(CustomObject*)GetInstance;
--(NSString*) getString1;
--(NSString*) getString2;
--(NSString*) getString3;
+
+-(NSArray*) getpictures;
+-(void) selectedPerson:(NSString*)name;
+-(NSString*) getName;
+-(NSString*) returnPicture;
 @end

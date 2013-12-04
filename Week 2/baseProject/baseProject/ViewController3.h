@@ -13,5 +13,14 @@
     NSString *string1;
     NSString *string2;
     NSString *string3;
+    IBOutlet UIImageView *monster1;
+    IBOutlet UIImageView *monster2;
+    IBOutlet UIImageView *monster3;
+    IBOutlet UIImageView *monster4;
+    IBOutlet UIImageView *monster5;
+    NSMutableArray *imgArray;
 }
+
+-(IBAction)onClick:(id)sender;
+
 @end

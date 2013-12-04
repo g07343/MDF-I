@@ -10,6 +10,7 @@
 
 @implementation CustomObject
 
+
 static CustomObject *_instance = nil;
 
 +(CustomObject*)GetInstance
@@ -31,26 +32,51 @@ static CustomObject *_instance = nil;
 {
     if(self = [super init])
     {   //store all data that will be retrieved from the ViewController3 class
-        string1 = @"This is stored data 1";
-        string2 = @"This is stored data 2";
-        string3 = @"This is stored data 3";
+        monsterArray = [[NSArray alloc] initWithObjects:@"hardscrabble.png", @"worthington.png", @"randall.png", @"mike.png", @"sulley.png", nil];
     }
     return self;
 }
 
--(NSString*) getString1
+
+
+-(NSArray*) getpictures
 {
-    return string1;
+    return monsterArray;
 }
 
--(NSString*) getString2
-{
-    return string2;
+-(void) selectedPerson:(NSString*)name
+{//save image
+    selectedImage = name;
+    if ([selectedImage  isEqual: @"hardscrabble"])
+    {
+        actorName = @"Helen Mirren";
+        actorImage = @"mirren.jpg";
+    } else if ([selectedImage  isEqual: @"worthington"])
+    {
+        actorName = @"Nathan Fillion";
+        actorImage = @"fillion.jpg";
+    } else if ([selectedImage  isEqual: @"randall"])
+    {
+        actorName = @"Steve Buscemi";
+        actorImage = @"buscemi.jpg";
+    } else if ([selectedImage  isEqual: @"mike"])
+    {
+        actorName = @"Billy Crystal";
+        actorImage = @"crystal.png";
+    } else if ([selectedImage  isEqual: @"sulley"])
+    {
+        actorName = @"John Goodman";
+        actorImage = @"goodman.jpg";
+    }
 }
 
--(NSString*) getString3
+-(NSString*) getName
 {
-    return string3;
+    return actorName;
+}
+-(NSString*) returnPicture
+{
+    return actorImage;
 }
 
 @end
