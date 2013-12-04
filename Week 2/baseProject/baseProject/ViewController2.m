@@ -8,6 +8,9 @@
 
 #import "ViewController2.h"
 #import "SelectedCell.h"
+#import "AlternateView.h"
+#import "CustomTableCell.h"
+
 @interface ViewController2 ()
 
 @end
@@ -22,7 +25,7 @@
     if (self) {
         // Custom initialization
         self.title = NSLocalizedString(@"Characters", @"Second");
-        self.tabBarItem.image = [UIImage imageNamed:@"Second"];
+        self.tabBarItem.image = [UIImage imageNamed:@"charIcon"];
     }
     return self;
 }
@@ -31,7 +34,13 @@
 {
     [super viewDidLoad];
     //set up array to hold objects for number or cells/title
-    detailArray = [[NSMutableArray alloc]initWithObjects:@"Mike", @"Sully", @"Randall", @"Dean Hardscrabble", @"Johnny J. Worthington", nil];
+    detailArray = [[NSMutableArray alloc]initWithObjects:@"Mike", @"Sulley", @"Randall", @"Dean Hardscrabble", @"Johnny J. Worthington", @"Other Characters", nil];
+    //set up picture array to pull thumbnails from
+    picArray = [[NSMutableArray alloc]initWithObjects:@"mike.png", @"sulley.png", @"randall.png", @"hardscrabble.png", @"worthington.png", @"mike.png", nil];
+    
+    tableView.backgroundColor = [UIColor clearColor];
+    tableView.opaque = NO;
+    tableView.rowHeight = 200;
 }
 
 - (void)didReceiveMemoryWarning
@@ -52,21 +61,31 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil)
     {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+        //cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+        NSArray* views = [[NSBundle mainBundle] loadNibNamed:@"CustomCellView" owner:nil options:nil];
         
-        tableView.backgroundColor = [UIColor clearColor];
-        tableView.opaque = NO;
-        tableView.backgroundView = nil;
-        
-        cell.backgroundColor = [UIColor clearColor];
-        cell.textLabel.textColor = [UIColor whiteColor];
-        cell.backgroundColor = [UIColor clearColor];
-        cell.backgroundView = [UIView new];
-        cell.selectedBackgroundView = [UIView new];
+        for (UIView *view in views)
+        {
+            if ([view isKindOfClass:[CustomTableCell class]])
+            {
+                cell = (CustomTableCell*)view;
+            }
+        }
     }
+    UIImageView *image = [[UIImageView alloc]initWithFrame:CGRectMake(210.0f, 60.0f, 75.0f, 75.0f)];
+    NSString *tempImage = [picArray objectAtIndex:indexPath.row];
+    image.image = [UIImage imageNamed:tempImage];
+    [cell addSubview:image];
     
-    cell.textLabel.text = (NSString*)[detailArray objectAtIndex:indexPath.row];
-    cell.textLabel.backgroundColor = [UIColor clearColor];
+    UILabel *name = [[UILabel alloc]initWithFrame:CGRectMake(0, 110.0f, 200.0f, 20.0f)];
+    name.textAlignment = NSTextAlignmentCenter;
+    name.backgroundColor = [UIColor clearColor];
+    name.text = (NSString*)[detailArray objectAtIndex:indexPath.row];
+    [cell addSubview:name];
+    
+    cell.backgroundColor = [UIColor clearColor];
+    
+    cell.contentView.backgroundColor = [UIColor clearColor];
     
     return cell;
 }
@@ -75,13 +94,22 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {   //capture which is selected as a string
     NSString *temp = [detailArray objectAtIndex:indexPath.row];
-    
-    //open detail view
-    SelectedCell *selectedCell = [[SelectedCell alloc]initWithNibName:@"SelectedCell" bundle:nil];
-    if (selectedCell != nil)
-    {   //this passes which manufacturer is passed to the detailViewController
-        [selectedCell setTitleString:temp];
-        [self presentModalViewController:selectedCell animated:TRUE];
+    //open alternate detail view to show library descriptions of other monsters
+    if ([temp  isEqual: @"Other Characters"])
+    {
+        AlternateView *alternateView = [[AlternateView alloc]initWithNibName:@"AlternateView" bundle:nil];
+        if (alternateView != nil)
+        {
+            [self presentModalViewController:alternateView animated:true];
+        }
+    } else {
+        //open detail view
+        SelectedCell *selectedCell = [[SelectedCell alloc]initWithNibName:@"SelectedCell" bundle:nil];
+        if (selectedCell != nil)
+        {   //this passes which monster is passed to the detailViewController
+            [selectedCell setTitleString:temp];
+            [self presentModalViewController:selectedCell animated:TRUE];
+        }
     }
 }
 

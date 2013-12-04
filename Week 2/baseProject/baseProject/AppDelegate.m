@@ -26,6 +26,7 @@
     UIViewController *viewController3 = [[ViewController3 alloc] initWithNibName:@"ViewController3" bundle:nil];
     self.tabBarController = [[UITabBarController alloc] init];
     self.tabBarController.viewControllers = [NSArray arrayWithObjects:navController, viewController2, viewController3, nil];
+    [navController.navigationBar setBackgroundColor:[UIColor blueColor]];
     
     self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];

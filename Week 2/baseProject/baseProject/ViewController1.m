@@ -23,9 +23,10 @@
         // Custom initialization
         
         self.title = NSLocalizedString(@"Plot", @"Plot");
-        self.tabBarItem.image = [UIImage imageNamed:@"First"];
+        self.tabBarItem.image = [UIImage imageNamed:@"plot"];
         //self.title = @"Monsters University";
         self.navigationItem.title = @"Monsters University";
+        
     }
     return self;
 }

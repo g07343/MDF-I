@@ -17,6 +17,7 @@
 @interface ViewController2 : UIViewController
 {
     NSMutableArray *detailArray;
+    NSArray *picArray;
     IBOutlet UITableView *tableView;
 }
 

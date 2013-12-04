@@ -21,7 +21,7 @@
     if (self) {
         // Custom initialization
         self.title = NSLocalizedString(@"Cast", @"Third");
-        self.tabBarItem.image = [UIImage imageNamed:@"First"];
+        self.tabBarItem.image = [UIImage imageNamed:@"mic"];
     }
     return self;
 }
