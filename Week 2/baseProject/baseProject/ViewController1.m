@@ -9,6 +9,7 @@
 #import "ViewController1.h"
 #import "MoreInfo1.h"
 #import "MoreInfo2.h"
+
 @interface ViewController1 ()
 
 @end
@@ -21,8 +22,10 @@
     if (self) {
         // Custom initialization
         
-        self.title = NSLocalizedString(@"First", @"First");
+        self.title = NSLocalizedString(@"Plot", @"Plot");
         self.tabBarItem.image = [UIImage imageNamed:@"First"];
+        //self.title = @"Monsters University";
+        self.navigationItem.title = @"Monsters University";
     }
     return self;
 }

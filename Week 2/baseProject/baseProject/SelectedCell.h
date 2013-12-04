@@ -11,6 +11,8 @@
 @interface SelectedCell : UIViewController <DetailDelegate>
 {
     IBOutlet UILabel *titleLabel;
+    IBOutlet UIImageView *charImage;
+    IBOutlet UITextView *charBio;
 }
 
 -(IBAction)onClick:(id)sender;

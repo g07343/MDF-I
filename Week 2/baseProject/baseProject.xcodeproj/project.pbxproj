@@ -31,6 +31,16 @@
 		C9BB0D2B184D8EAB006DA043 /* SelectedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C9BB0D29184D8EAB006DA043 /* SelectedCell.m */; };
 		C9BB0D2C184D8EAB006DA043 /* SelectedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9BB0D2A184D8EAB006DA043 /* SelectedCell.xib */; };
 		C9BB0D30184D96C6006DA043 /* CustomObject.m in Sources */ = {isa = PBXBuildFile; fileRef = C9BB0D2F184D96C6006DA043 /* CustomObject.m */; };
+		C9BB0D33184EC6E0006DA043 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = C9BB0D32184EC6E0006DA043 /* logo.png */; };
+		C9BB0D35184EC7B7006DA043 /* characters.png in Resources */ = {isa = PBXBuildFile; fileRef = C9BB0D34184EC7B7006DA043 /* characters.png */; };
+		C9BB0D37184ECAE5006DA043 /* mike_sully_meet.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C9BB0D36184ECAE5006DA043 /* mike_sully_meet.jpg */; };
+		C9BB0D39184ECC25006DA043 /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = C9BB0D38184ECC25006DA043 /* bg.png */; };
+		C9BB0D3B184ECD93006DA043 /* Oozma-Kappa.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C9BB0D3A184ECD93006DA043 /* Oozma-Kappa.jpg */; };
+		C9BB0D3D184ED513006DA043 /* sulley.png in Resources */ = {isa = PBXBuildFile; fileRef = C9BB0D3C184ED513006DA043 /* sulley.png */; };
+		C9BB0D3F184ED79A006DA043 /* mike.png in Resources */ = {isa = PBXBuildFile; fileRef = C9BB0D3E184ED79A006DA043 /* mike.png */; };
+		C9BB0D41184ED828006DA043 /* randall.png in Resources */ = {isa = PBXBuildFile; fileRef = C9BB0D40184ED828006DA043 /* randall.png */; };
+		C9BB0D43184ED875006DA043 /* hardscrabble.png in Resources */ = {isa = PBXBuildFile; fileRef = C9BB0D42184ED875006DA043 /* hardscrabble.png */; };
+		C9BB0D45184ED8E8006DA043 /* worthington.png in Resources */ = {isa = PBXBuildFile; fileRef = C9BB0D44184ED8E8006DA043 /* worthington.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +79,16 @@
 		C9BB0D2A184D8EAB006DA043 /* SelectedCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectedCell.xib; sourceTree = "<group>"; };
 		C9BB0D2E184D96C6006DA043 /* CustomObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomObject.h; sourceTree = "<group>"; };
 		C9BB0D2F184D96C6006DA043 /* CustomObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomObject.m; sourceTree = "<group>"; };
+		C9BB0D32184EC6E0006DA043 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo.png; path = "image assets/logo.png"; sourceTree = "<group>"; };
+		C9BB0D34184EC7B7006DA043 /* characters.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = characters.png; path = "image assets/characters.png"; sourceTree = "<group>"; };
+		C9BB0D36184ECAE5006DA043 /* mike_sully_meet.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = mike_sully_meet.jpg; path = "image assets/mike_sully_meet.jpg"; sourceTree = "<group>"; };
+		C9BB0D38184ECC25006DA043 /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bg.png; path = "image assets/bg.png"; sourceTree = "<group>"; };
+		C9BB0D3A184ECD93006DA043 /* Oozma-Kappa.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Oozma-Kappa.jpg"; path = "image assets/Oozma-Kappa.jpg"; sourceTree = "<group>"; };
+		C9BB0D3C184ED513006DA043 /* sulley.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sulley.png; path = "image assets/sulley.png"; sourceTree = "<group>"; };
+		C9BB0D3E184ED79A006DA043 /* mike.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mike.png; path = "image assets/mike.png"; sourceTree = "<group>"; };
+		C9BB0D40184ED828006DA043 /* randall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = randall.png; path = "image assets/randall.png"; sourceTree = "<group>"; };
+		C9BB0D42184ED875006DA043 /* hardscrabble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = hardscrabble.png; path = "image assets/hardscrabble.png"; sourceTree = "<group>"; };
+		C9BB0D44184ED8E8006DA043 /* worthington.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = worthington.png; path = "image assets/worthington.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				A21C4CE017D7878600C6C3BB /* baseProject */,
+				C9BB0D31184EC6CC006DA043 /* image assets */,
 				A21C4CD917D7878600C6C3BB /* Frameworks */,
 				A21C4CD817D7878600C6C3BB /* Products */,
 				A21C4CE117D7878600C6C3BB /* Supporting Files */,
@@ -215,6 +236,24 @@
 			name = CustomObject;
 			sourceTree = "<group>";
 		};
+		C9BB0D31184EC6CC006DA043 /* image assets */ = {
+			isa = PBXGroup;
+			children = (
+				C9BB0D44184ED8E8006DA043 /* worthington.png */,
+				C9BB0D42184ED875006DA043 /* hardscrabble.png */,
+				C9BB0D40184ED828006DA043 /* randall.png */,
+				C9BB0D3E184ED79A006DA043 /* mike.png */,
+				C9BB0D3C184ED513006DA043 /* sulley.png */,
+				C9BB0D3A184ECD93006DA043 /* Oozma-Kappa.jpg */,
+				C9BB0D38184ECC25006DA043 /* bg.png */,
+				C9BB0D36184ECAE5006DA043 /* mike_sully_meet.jpg */,
+				C9BB0D34184EC7B7006DA043 /* characters.png */,
+				C9BB0D32184EC6E0006DA043 /* logo.png */,
+			);
+			name = "image assets";
+			path = baseProject;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -266,15 +305,25 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9BB0D33184EC6E0006DA043 /* logo.png in Resources */,
 				A21C4CE517D7878600C6C3BB /* InfoPlist.strings in Resources */,
+				C9BB0D39184ECC25006DA043 /* bg.png in Resources */,
 				A21C4CED17D7878600C6C3BB /* Default.png in Resources */,
+				C9BB0D43184ED875006DA043 /* hardscrabble.png in Resources */,
+				C9BB0D3B184ECD93006DA043 /* Oozma-Kappa.jpg in Resources */,
+				C9BB0D3D184ED513006DA043 /* sulley.png in Resources */,
 				C9BB0D21184D8AD8006DA043 /* MoreInfo1.xib in Resources */,
 				A21C4CEF17D7878600C6C3BB /* Default@2x.png in Resources */,
+				C9BB0D37184ECAE5006DA043 /* mike_sully_meet.jpg in Resources */,
 				C9BB0D0E184D7D6D006DA043 /* ViewController2.xib in Resources */,
 				C9BB0D16184D7FE6006DA043 /* first.png in Resources */,
 				C9BB0D2C184D8EAB006DA043 /* SelectedCell.xib in Resources */,
+				C9BB0D45184ED8E8006DA043 /* worthington.png in Resources */,
+				C9BB0D3F184ED79A006DA043 /* mike.png in Resources */,
 				C9BB0D26184D8AE6006DA043 /* MoreInfo2.xib in Resources */,
+				C9BB0D35184EC7B7006DA043 /* characters.png in Resources */,
 				A21C4CF117D7878600C6C3BB /* Default-568h@2x.png in Resources */,
+				C9BB0D41184ED828006DA043 /* randall.png in Resources */,
 				C9BB0D17184D7FE6006DA043 /* second.png in Resources */,
 				C9BB0D13184D7D7C006DA043 /* ViewController3.xib in Resources */,
 				A21C4CF717D7878600C6C3BB /* ViewController1.xib in Resources */,

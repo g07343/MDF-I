@@ -21,7 +21,7 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
-        self.title = NSLocalizedString(@"Second", @"Second");
+        self.title = NSLocalizedString(@"Characters", @"Second");
         self.tabBarItem.image = [UIImage imageNamed:@"Second"];
     }
     return self;
@@ -31,7 +31,7 @@
 {
     [super viewDidLoad];
     //set up array to hold objects for number or cells/title
-    detailArray = [[NSMutableArray alloc]initWithObjects:@"detail1", @"detail2", @"detail3", @"detail4", @"detail5", nil];
+    detailArray = [[NSMutableArray alloc]initWithObjects:@"Mike", @"Sully", @"Randall", @"Dean Hardscrabble", @"Johnny J. Worthington", nil];
 }
 
 - (void)didReceiveMemoryWarning
@@ -53,9 +53,20 @@
     if (cell == nil)
     {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+        
+        tableView.backgroundColor = [UIColor clearColor];
+        tableView.opaque = NO;
+        tableView.backgroundView = nil;
+        
+        cell.backgroundColor = [UIColor clearColor];
+        cell.textLabel.textColor = [UIColor whiteColor];
+        cell.backgroundColor = [UIColor clearColor];
+        cell.backgroundView = [UIView new];
+        cell.selectedBackgroundView = [UIView new];
     }
     
     cell.textLabel.text = (NSString*)[detailArray objectAtIndex:indexPath.row];
+    cell.textLabel.backgroundColor = [UIColor clearColor];
     
     return cell;
 }
