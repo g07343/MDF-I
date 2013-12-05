@@ -10,6 +10,7 @@
                 <outlet property="artSelected" destination="fnE-ze-Kqw" id="T2E-iz-EjO"/>
                 <outlet property="charBio" destination="M4A-D7-Kt4" id="7KY-Yy-nFt"/>
                 <outlet property="donSelected" destination="x5W-93-eDc" id="nzO-Pu-p7A"/>
+                <outlet property="nameLabel" destination="nMZ-GI-wjz" id="4Mr-Js-TEW"/>
                 <outlet property="squishySelected" destination="t70-bH-M8J" id="QC2-VV-Tcg"/>
                 <outlet property="terrySelected" destination="eqT-oo-4CX" id="eJ0-ni-NQN"/>
                 <outlet property="view" destination="1" id="3"/>
@@ -111,6 +112,13 @@
                         <action selector="onClick:" destination="-1" eventType="touchUpInside" id="AaU-JW-h15"/>
                     </connections>
                 </button>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nMZ-GI-wjz">
+                    <rect key="frame" x="83" y="59" width="156" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>

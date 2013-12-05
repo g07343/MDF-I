@@ -40,13 +40,11 @@
     for ( int i = 0; i < temp.count; i++)
     {
         [imgArray addObject:temp[i]];
-        NSLog(@"Image added was: %@", temp[i]);
-        NSLog(@"%i", [imgArray count]);
     }
     
     //loop through imgArray to set images to objects in imgViews array
     for (int i = 0; i < imgArray.count; i++)
-    {
+    {   //could not get a loop to work for an array containing imageViews, so check each iteraction manually :(
         NSString *pic = [imgArray objectAtIndex:i];
         if (i == 0)
         {
@@ -78,36 +76,32 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
+//set up function to detect which monster button is clicked, communicate to custom object class, and open the actor view popup window afterwards
 -(IBAction)onClick:(id)sender
 {
     UIButton *button = (UIButton*)sender;
     if (button != nil)
     {
        if (button.tag == 0)
-       {
+       {    //set the dynamic string variable to whomever is selected so custom object will pass correct data to Popup view
            NSString *temp = @"hardscrabble";
            [[CustomObject GetInstance] selectedPerson:temp];
            
        } else if (button.tag == 1)
        {
-           NSLog(@"Monster is worthington");
-           NSString *temp = @"worthington";
+            NSString *temp = @"worthington";
            [[CustomObject GetInstance] selectedPerson:temp];
        } else if (button.tag == 2)
        {
-           NSLog(@"Monster is randall");
            NSString *temp = @"randall";
            [[CustomObject GetInstance] selectedPerson:temp];
        } else if (button.tag == 3)
        {
-           NSLog(@"Monster is mike");
            NSString *temp = @"mike";
            [[CustomObject GetInstance] selectedPerson:temp];
        } else if (button.tag == 4)
        {
-           NSLog(@"Monster is sulley");
-           NSString *temp = @"sulley";
+            NSString *temp = @"sulley";
            [[CustomObject GetInstance] selectedPerson:temp];
        }
         ViewController *actorView =[[ViewController alloc]initWithNibName:@"ViewController" bundle:nil];

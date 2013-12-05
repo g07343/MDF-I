@@ -15,6 +15,7 @@
     NSString *selectedImage;
     NSString *actorName;
     NSString *actorImage;
+    NSString *otherFilms;
 }
 +(CustomObject*)GetInstance;
 
@@ -22,4 +23,5 @@
 -(void) selectedPerson:(NSString*)name;
 -(NSString*) getName;
 -(NSString*) returnPicture;
+-(NSString*) getFilms;
 @end

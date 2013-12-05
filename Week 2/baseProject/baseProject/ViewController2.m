@@ -36,11 +36,11 @@
     //set up array to hold objects for number or cells/title
     detailArray = [[NSMutableArray alloc]initWithObjects:@"Mike", @"Sulley", @"Randall", @"Dean Hardscrabble", @"Johnny J. Worthington", @"Other Characters", nil];
     //set up picture array to pull thumbnails from
-    picArray = [[NSMutableArray alloc]initWithObjects:@"mike.png", @"sulley.png", @"randall.png", @"hardscrabble.png", @"worthington.png", @"mike.png", nil];
+    picArray = [[NSMutableArray alloc]initWithObjects:@"mike.png", @"sulley.png", @"randall.png", @"hardscrabble.png", @"worthington.png", @"clipboard.png", nil];
     
     tableView.backgroundColor = [UIColor clearColor];
     tableView.opaque = NO;
-    tableView.rowHeight = 200;
+    tableView.rowHeight = 184;
 }
 
 - (void)didReceiveMemoryWarning
@@ -72,11 +72,13 @@
             }
         }
     }
+    //manually create a UIImageView to hold picture within the frame of the id graphic for custom cell
     UIImageView *image = [[UIImageView alloc]initWithFrame:CGRectMake(210.0f, 60.0f, 75.0f, 75.0f)];
     NSString *tempImage = [picArray objectAtIndex:indexPath.row];
     image.image = [UIImage imageNamed:tempImage];
     [cell addSubview:image];
     
+    //manually create label for each name in detailArray to position it correctly on id graphic for custom cell
     UILabel *name = [[UILabel alloc]initWithFrame:CGRectMake(0, 110.0f, 200.0f, 20.0f)];
     name.textAlignment = NSTextAlignmentCenter;
     name.backgroundColor = [UIColor clearColor];
@@ -84,15 +86,16 @@
     [cell addSubview:name];
     
     cell.backgroundColor = [UIColor clearColor];
-    
+
     cell.contentView.backgroundColor = [UIColor clearColor];
-    
+    //turn off the default 'highlighting' effect of ios when cell is selected
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;
 }
 
 //default method provided by the delegate for handling cell selection
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{   //capture which is selected as a string
+    {   //capture which is selected as a string
     NSString *temp = [detailArray objectAtIndex:indexPath.row];
     //open alternate detail view to show library descriptions of other monsters
     if ([temp  isEqual: @"Other Characters"])

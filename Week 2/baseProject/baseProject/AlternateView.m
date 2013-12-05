@@ -27,12 +27,13 @@
 {
     [super viewDidLoad];
     //set selected imageViews to 'invisible' until the user makes a selection
+    nameLabel.text = @"";
     donSelected.alpha = 0;
     artSelected.alpha = 0;
     squishySelected.alpha = 0;
     terrySelected.alpha = 0;
+    //override the charBio text upon load to display prompt string
     charBio.text = @"Select a monster above to get more info!";
-    // Do any additional setup after loading the view from its nib.
 }
 
 - (void)didReceiveMemoryWarning
@@ -40,7 +41,8 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-//check which button is being pressed and display information from Full Sail library article or go back
+//check which button is being pressed and display information from Full Sail library article or go back (also toggles visibilty of imageViews depending on selection)
+
 -(IBAction)onClick:(id)sender
 {
     UIButton *button = (UIButton*)sender;
@@ -51,6 +53,7 @@
             [self dismissModalViewControllerAnimated:true];
         } else if (button.tag == 1)
         {//reset alpha to none for all others and set don to visible
+            nameLabel.text = @"Don";
             artSelected.alpha = 0;
             squishySelected.alpha = 0;
             terrySelected.alpha = 0;
@@ -58,6 +61,7 @@
             charBio.text = @"A midlife failure now back in school, Don (Joel Murray) finds love in bloom at MU";
         } else if (button.tag == 2)
         {//reset alpha to none for all others and set art to visible
+            nameLabel.text = @"Art";
             donSelected.alpha = 0;
             squishySelected.alpha = 0;
             terrySelected.alpha = 0;
@@ -65,6 +69,7 @@
             charBio.text = @"MU's hippy-dippy furball (Charlie Day) is in college because \"I can't go back to jail!\"";
         } else if (button.tag == 3)
         {//reset alpha to none for all others and set squishy to visible
+            nameLabel.text = @"Squishy";
             donSelected.alpha = 0;
             artSelected.alpha = 0;
             terrySelected.alpha = 0;
@@ -72,6 +77,7 @@
             charBio.text = @"Mike's frat bro is this smiley blob--optimism in embryo. (Voiced by Peter Sohn.)";
         } else if (button.tag == 4)
         {//reset alpha to none for all others and set terry to visible
+            nameLabel.text = @"Terry and Terri";
             donSelected.alpha = 0;
             artSelected.alpha = 0;
             squishySelected.alpha = 0;

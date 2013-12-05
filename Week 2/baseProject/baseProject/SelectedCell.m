@@ -28,7 +28,8 @@
 -(void)viewWillAppear:(BOOL)animated
 {
     titleLabel.text = titleString;
-    if ([titleString  isEqual: @"Sully"])
+    
+    if ([titleString  isEqual: @"Sulley"])
     {
         titleLabel.text = titleString;
         charImage.image = [UIImage imageNamed:@"sulley.png"];

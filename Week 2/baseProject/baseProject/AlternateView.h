@@ -15,6 +15,7 @@
     IBOutlet UIImageView *artSelected;
     IBOutlet UIImageView *squishySelected;
     IBOutlet UIImageView *terrySelected;
+    IBOutlet UILabel *nameLabel;
 }
 
 -(IBAction)onClick:(id)sender;

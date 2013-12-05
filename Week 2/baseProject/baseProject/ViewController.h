@@ -12,6 +12,7 @@
 {
     IBOutlet UIImageView *actorImage;
     IBOutlet UILabel *nameLabel;
+    IBOutlet UITextView *infoField;
 }
 
 -(IBAction)onClick:(id)sender;
