@@ -17,6 +17,12 @@
 		A21C4CF117D7878600C6C3BB /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A21C4CF017D7878600C6C3BB /* Default-568h@2x.png */; };
 		A21C4CF417D7878600C6C3BB /* ViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = A21C4CF317D7878600C6C3BB /* ViewController1.m */; };
 		A21C4CF717D7878600C6C3BB /* ViewController1.xib in Resources */ = {isa = PBXBuildFile; fileRef = A21C4CF517D7878600C6C3BB /* ViewController1.xib */; };
+		C94E37D4185132CD00A73BE2 /* CreatedMonster.m in Sources */ = {isa = PBXBuildFile; fileRef = C94E37D2185132CD00A73BE2 /* CreatedMonster.m */; };
+		C94E37D5185132CD00A73BE2 /* CreatedMonster.xib in Resources */ = {isa = PBXBuildFile; fileRef = C94E37D3185132CD00A73BE2 /* CreatedMonster.xib */; };
+		C94E37DA18513A7700A73BE2 /* griffBig.png in Resources */ = {isa = PBXBuildFile; fileRef = C94E37D618513A7700A73BE2 /* griffBig.png */; };
+		C94E37DB18513A7700A73BE2 /* knightBig.png in Resources */ = {isa = PBXBuildFile; fileRef = C94E37D718513A7700A73BE2 /* knightBig.png */; };
+		C94E37DC18513A7700A73BE2 /* rozBig.png in Resources */ = {isa = PBXBuildFile; fileRef = C94E37D818513A7700A73BE2 /* rozBig.png */; };
+		C94E37DD18513A7700A73BE2 /* waternooseBig.png in Resources */ = {isa = PBXBuildFile; fileRef = C94E37D918513A7700A73BE2 /* waternooseBig.png */; };
 		C9BB0D0D184D7D6D006DA043 /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = C9BB0D0B184D7D6D006DA043 /* ViewController2.m */; };
 		C9BB0D0E184D7D6D006DA043 /* ViewController2.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9BB0D0C184D7D6D006DA043 /* ViewController2.xib */; };
 		C9BB0D12184D7D7C006DA043 /* ViewController3.m in Sources */ = {isa = PBXBuildFile; fileRef = C9BB0D10184D7D7C006DA043 /* ViewController3.m */; };
@@ -68,6 +74,13 @@
 		C9BB0D8B18502BF4006DA043 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = C9BB0D8818502BF4006DA043 /* Default.png */; };
 		C9BB0D8C18502BF4006DA043 /* launch_640x960.png in Resources */ = {isa = PBXBuildFile; fileRef = C9BB0D8918502BF4006DA043 /* launch_640x960.png */; };
 		C9BB0D8D18502BF4006DA043 /* launch_640x1136.png in Resources */ = {isa = PBXBuildFile; fileRef = C9BB0D8A18502BF4006DA043 /* launch_640x1136.png */; };
+		C9BB0D921851118E006DA043 /* ViewController4.m in Sources */ = {isa = PBXBuildFile; fileRef = C9BB0D901851118E006DA043 /* ViewController4.m */; };
+		C9BB0D931851118F006DA043 /* ViewController4.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9BB0D911851118E006DA043 /* ViewController4.xib */; };
+		C9BB0D95185117A7006DA043 /* create.png in Resources */ = {isa = PBXBuildFile; fileRef = C9BB0D94185117A7006DA043 /* create.png */; };
+		C9BB0D9A18511B05006DA043 /* griff.png in Resources */ = {isa = PBXBuildFile; fileRef = C9BB0D9618511B05006DA043 /* griff.png */; };
+		C9BB0D9B18511B05006DA043 /* knight.png in Resources */ = {isa = PBXBuildFile; fileRef = C9BB0D9718511B05006DA043 /* knight.png */; };
+		C9BB0D9C18511B05006DA043 /* roz.png in Resources */ = {isa = PBXBuildFile; fileRef = C9BB0D9818511B05006DA043 /* roz.png */; };
+		C9BB0D9D18511B05006DA043 /* waternoose.png in Resources */ = {isa = PBXBuildFile; fileRef = C9BB0D9918511B05006DA043 /* waternoose.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -87,6 +100,13 @@
 		A21C4CF217D7878600C6C3BB /* ViewController1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController1.h; sourceTree = "<group>"; };
 		A21C4CF317D7878600C6C3BB /* ViewController1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController1.m; sourceTree = "<group>"; };
 		A21C4CF617D7878600C6C3BB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController1.xib; sourceTree = "<group>"; };
+		C94E37D1185132CD00A73BE2 /* CreatedMonster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreatedMonster.h; sourceTree = "<group>"; };
+		C94E37D2185132CD00A73BE2 /* CreatedMonster.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreatedMonster.m; sourceTree = "<group>"; };
+		C94E37D3185132CD00A73BE2 /* CreatedMonster.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CreatedMonster.xib; sourceTree = "<group>"; };
+		C94E37D618513A7700A73BE2 /* griffBig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = griffBig.png; path = "image assets/griffBig.png"; sourceTree = "<group>"; };
+		C94E37D718513A7700A73BE2 /* knightBig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = knightBig.png; path = "image assets/knightBig.png"; sourceTree = "<group>"; };
+		C94E37D818513A7700A73BE2 /* rozBig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = rozBig.png; path = "image assets/rozBig.png"; sourceTree = "<group>"; };
+		C94E37D918513A7700A73BE2 /* waternooseBig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = waternooseBig.png; path = "image assets/waternooseBig.png"; sourceTree = "<group>"; };
 		C9BB0D0A184D7D6D006DA043 /* ViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController2.h; sourceTree = "<group>"; };
 		C9BB0D0B184D7D6D006DA043 /* ViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController2.m; sourceTree = "<group>"; };
 		C9BB0D0C184D7D6D006DA043 /* ViewController2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController2.xib; sourceTree = "<group>"; };
@@ -147,6 +167,14 @@
 		C9BB0D8818502BF4006DA043 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = "image assets/Default.png"; sourceTree = "<group>"; };
 		C9BB0D8918502BF4006DA043 /* launch_640x960.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = launch_640x960.png; path = "image assets/launch_640x960.png"; sourceTree = "<group>"; };
 		C9BB0D8A18502BF4006DA043 /* launch_640x1136.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = launch_640x1136.png; path = "image assets/launch_640x1136.png"; sourceTree = "<group>"; };
+		C9BB0D8F1851118E006DA043 /* ViewController4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController4.h; sourceTree = "<group>"; };
+		C9BB0D901851118E006DA043 /* ViewController4.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController4.m; sourceTree = "<group>"; };
+		C9BB0D911851118E006DA043 /* ViewController4.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController4.xib; sourceTree = "<group>"; };
+		C9BB0D94185117A7006DA043 /* create.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = create.png; path = "UI Icons/create.png"; sourceTree = "<group>"; };
+		C9BB0D9618511B05006DA043 /* griff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = griff.png; path = "image assets/griff.png"; sourceTree = "<group>"; };
+		C9BB0D9718511B05006DA043 /* knight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = knight.png; path = "image assets/knight.png"; sourceTree = "<group>"; };
+		C9BB0D9818511B05006DA043 /* roz.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = roz.png; path = "image assets/roz.png"; sourceTree = "<group>"; };
+		C9BB0D9918511B05006DA043 /* waternoose.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = waternoose.png; path = "image assets/waternoose.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,11 +223,13 @@
 		A21C4CE017D7878600C6C3BB /* baseProject */ = {
 			isa = PBXGroup;
 			children = (
+				C9BB0D8E18511131006DA043 /* View 4 Files */,
 				C9BB0D18184D7FEF006DA043 /* icons */,
 				A21C4CE917D7878600C6C3BB /* AppDelegate.h */,
 				A21C4CEA17D7878600C6C3BB /* AppDelegate.m */,
 				C9BB0D19184D8949006DA043 /* View1 Files/Nav Control Views */,
 				C9BB0D1A184D8954006DA043 /* View2 Files/TableView Files */,
+				C9BB0D2D184D96A4006DA043 /* CustomObject */,
 				C9BB0D1B184D895E006DA043 /* View3 Files */,
 			);
 			path = baseProject;
@@ -220,9 +250,20 @@
 			path = baseProject;
 			sourceTree = "<group>";
 		};
+		C94E37D0185132B400A73BE2 /* Created Monster View */ = {
+			isa = PBXGroup;
+			children = (
+				C94E37D1185132CD00A73BE2 /* CreatedMonster.h */,
+				C94E37D2185132CD00A73BE2 /* CreatedMonster.m */,
+				C94E37D3185132CD00A73BE2 /* CreatedMonster.xib */,
+			);
+			name = "Created Monster View";
+			sourceTree = "<group>";
+		};
 		C9BB0D18184D7FEF006DA043 /* icons */ = {
 			isa = PBXGroup;
 			children = (
+				C9BB0D94185117A7006DA043 /* create.png */,
 				C9BB0D8218502A49006DA043 /* muLogo57x57.png */,
 				C9BB0D8318502A49006DA043 /* muLogo114x114.png */,
 				C9BB0D8418502A49006DA043 /* muLogo120x120.png */,
@@ -266,7 +307,6 @@
 				C9BB0D10184D7D7C006DA043 /* ViewController3.m */,
 				C9BB0D11184D7D7C006DA043 /* ViewController3.xib */,
 				C9BB0D46184EF030006DA043 /* popUp View */,
-				C9BB0D2D184D96A4006DA043 /* CustomObject */,
 			);
 			name = "View3 Files";
 			sourceTree = "<group>";
@@ -306,6 +346,14 @@
 		C9BB0D31184EC6CC006DA043 /* image assets */ = {
 			isa = PBXGroup;
 			children = (
+				C94E37D618513A7700A73BE2 /* griffBig.png */,
+				C94E37D718513A7700A73BE2 /* knightBig.png */,
+				C94E37D818513A7700A73BE2 /* rozBig.png */,
+				C94E37D918513A7700A73BE2 /* waternooseBig.png */,
+				C9BB0D9618511B05006DA043 /* griff.png */,
+				C9BB0D9718511B05006DA043 /* knight.png */,
+				C9BB0D9818511B05006DA043 /* roz.png */,
+				C9BB0D9918511B05006DA043 /* waternoose.png */,
 				C9BB0D8818502BF4006DA043 /* Default.png */,
 				C9BB0D8918502BF4006DA043 /* launch_640x960.png */,
 				C9BB0D8A18502BF4006DA043 /* launch_640x1136.png */,
@@ -367,6 +415,17 @@
 			name = "Custom Cell xib";
 			sourceTree = "<group>";
 		};
+		C9BB0D8E18511131006DA043 /* View 4 Files */ = {
+			isa = PBXGroup;
+			children = (
+				C94E37D0185132B400A73BE2 /* Created Monster View */,
+				C9BB0D8F1851118E006DA043 /* ViewController4.h */,
+				C9BB0D901851118E006DA043 /* ViewController4.m */,
+				C9BB0D911851118E006DA043 /* ViewController4.xib */,
+			);
+			name = "View 4 Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -426,7 +485,9 @@
 				C9BB0D5B184F0BFE006DA043 /* charIcon.png in Resources */,
 				C9BB0D39184ECC25006DA043 /* bg.png in Resources */,
 				C9BB0D52184EF715006DA043 /* crystal.png in Resources */,
+				C94E37D5185132CD00A73BE2 /* CreatedMonster.xib in Resources */,
 				C9BB0D8518502A49006DA043 /* muLogo57x57.png in Resources */,
+				C9BB0D9C18511B05006DA043 /* roz.png in Resources */,
 				C9BB0D65184F1519006DA043 /* charsInactive.png in Resources */,
 				C9BB0D43184ED875006DA043 /* hardscrabble.png in Resources */,
 				C9BB0D811850288C006DA043 /* clipboard.png in Resources */,
@@ -441,26 +502,35 @@
 				C9BB0D8618502A49006DA043 /* muLogo114x114.png in Resources */,
 				C9BB0D0E184D7D6D006DA043 /* ViewController2.xib in Resources */,
 				C9BB0D6C184F19F0006DA043 /* squishySelected.png in Resources */,
+				C94E37DA18513A7700A73BE2 /* griffBig.png in Resources */,
 				C9BB0D16184D7FE6006DA043 /* first.png in Resources */,
+				C94E37DB18513A7700A73BE2 /* knightBig.png in Resources */,
 				C9BB0D7F184F37C0006DA043 /* transparent.png in Resources */,
 				C9BB0D7A184F2785006DA043 /* CustomCellView.xib in Resources */,
 				C9BB0D2C184D8EAB006DA043 /* SelectedCell.xib in Resources */,
 				C9BB0D78184F20C0006DA043 /* idCard.png in Resources */,
 				C9BB0D45184ED8E8006DA043 /* worthington.png in Resources */,
+				C94E37DD18513A7700A73BE2 /* waternooseBig.png in Resources */,
 				C9BB0D6A184F19F0006DA043 /* artSelected.png in Resources */,
 				C9BB0D8718502A49006DA043 /* muLogo120x120.png in Resources */,
 				C9BB0D3F184ED79A006DA043 /* mike.png in Resources */,
 				C9BB0D6B184F19F0006DA043 /* donSelected.png in Resources */,
+				C9BB0D95185117A7006DA043 /* create.png in Resources */,
+				C9BB0D9B18511B05006DA043 /* knight.png in Resources */,
 				C9BB0D8D18502BF4006DA043 /* launch_640x1136.png in Resources */,
 				C9BB0D5D184F0C50006DA043 /* mic.png in Resources */,
 				C9BB0D26184D8AE6006DA043 /* MoreInfo2.xib in Resources */,
+				C94E37DC18513A7700A73BE2 /* rozBig.png in Resources */,
 				C9BB0D35184EC7B7006DA043 /* characters.png in Resources */,
+				C9BB0D9D18511B05006DA043 /* waternoose.png in Resources */,
 				A21C4CF117D7878600C6C3BB /* Default-568h@2x.png in Resources */,
 				C9BB0D41184ED828006DA043 /* randall.png in Resources */,
 				C9BB0D57184F0A88006DA043 /* plot.png in Resources */,
+				C9BB0D931851118F006DA043 /* ViewController4.xib in Resources */,
 				C9BB0D17184D7FE6006DA043 /* second.png in Resources */,
 				C9BB0D13184D7D7C006DA043 /* ViewController3.xib in Resources */,
 				A21C4CF717D7878600C6C3BB /* ViewController1.xib in Resources */,
+				C9BB0D9A18511B05006DA043 /* griff.png in Resources */,
 				C9BB0D63184F11D2006DA043 /* AlternateView.xib in Resources */,
 				C9BB0D54184EF715006DA043 /* goodman.jpg in Resources */,
 				C9BB0D4B184EF046006DA043 /* ViewController.xib in Resources */,
@@ -483,7 +553,9 @@
 				A21C4CEB17D7878600C6C3BB /* AppDelegate.m in Sources */,
 				A21C4CF417D7878600C6C3BB /* ViewController1.m in Sources */,
 				C9BB0D12184D7D7C006DA043 /* ViewController3.m in Sources */,
+				C94E37D4185132CD00A73BE2 /* CreatedMonster.m in Sources */,
 				C9BB0D30184D96C6006DA043 /* CustomObject.m in Sources */,
+				C9BB0D921851118E006DA043 /* ViewController4.m in Sources */,
 				C9BB0D25184D8AE6006DA043 /* MoreInfo2.m in Sources */,
 				C9BB0D7D184F28F9006DA043 /* CustomTableCell.m in Sources */,
 			);

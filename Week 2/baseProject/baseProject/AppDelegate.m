@@ -11,6 +11,7 @@
 #import "ViewController1.h"
 #import "ViewController2.h"
 #import "ViewController3.h"
+#import "ViewController4.h"
 
 @implementation AppDelegate
 
@@ -24,8 +25,9 @@
     UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:viewController1];
     UIViewController *viewController2 = [[ViewController2 alloc] initWithNibName:@"ViewController2" bundle:nil];
     UIViewController *viewController3 = [[ViewController3 alloc] initWithNibName:@"ViewController3" bundle:nil];
+    UIViewController *viewController4 = [[ViewController4 alloc] initWithNibName:@"ViewController4" bundle:nil];
     self.tabBarController = [[UITabBarController alloc] init];
-    self.tabBarController.viewControllers = [NSArray arrayWithObjects:navController, viewController2, viewController3, nil];
+    self.tabBarController.viewControllers = [NSArray arrayWithObjects:navController, viewController2, viewController3, viewController4, nil];
     [navController.navigationBar setBackgroundColor:[UIColor blueColor]];
     
     self.window.rootViewController = self.tabBarController;

@@ -24,4 +24,14 @@
 -(NSString*) getName;
 -(NSString*) returnPicture;
 -(NSString*) getFilms;
+//below functions are for saving NSUserDefaults for the createdMonster ViewController
+-(void) saveName:(NSString*)name;
+-(void) saveDate:(NSString*)date;
+-(void) savePic:(NSString*)pic;
+
+//below functions retrieve any saved NSUserDefaults for the createdMonster ViewController
+-(NSString*) savedName;
+-(NSString*) savedDate;
+-(NSString*) savedPic;
+
 @end

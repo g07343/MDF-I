@@ -88,4 +88,86 @@ static CustomObject *_instance = nil;
 {
     return otherFilms;
 }
+
+-(void) saveName:(NSString*)name
+{
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    if (defaults != nil)
+    {
+        NSString *monsterName = name;
+        //set the name for defaults
+        [defaults setObject:monsterName forKey:@"name"];
+        
+        //save data
+        [defaults synchronize];
+        NSLog(@"%@ is saved!", monsterName);
+    }
+}
+-(void) saveDate:(NSString*)date
+{
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    if (defaults != nil)
+    {
+        NSString *monsterDate = date;
+        //set date for default
+        [defaults setObject:monsterDate forKey:@"date"];
+        //save
+        [defaults synchronize];
+        NSLog(@"%@ is saved!", monsterDate);
+    }
+}
+-(void) savePic:(NSString*)pic
+{
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    if (defaults != nil)
+    {
+        NSString *monsterPic = pic;
+        //set pic for default
+        [defaults setObject:monsterPic forKey:@"pic"];
+        //save
+        [defaults synchronize];
+        NSLog(@"%@ is saved!", monsterPic);
+    }
+}
+
+-(NSString*) savedName
+{
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    if (defaults != nil)
+    {
+        NSString *name = [defaults objectForKey:@"name"];
+        //make sure the object is not nil (if nil crashes program)
+        if (name != nil)
+        {
+            return name;
+        }
+    }
+    return nil;
+}
+-(NSString*) savedDate
+{
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    if (defaults != nil)
+    {
+        NSString *date = [defaults objectForKey:@"date"];
+        if (date != nil)
+        {
+            return date;
+        }
+    }
+    return nil;
+}
+-(NSString*) savedPic
+{
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    if (defaults != nil)
+    {
+        NSString *pic = [defaults objectForKey:@"pic"];
+        if (pic != nil)
+        {
+            return pic;
+        }
+    }
+    return nil;
+}
 @end
