@@ -8,16 +8,23 @@
 
 #import "AppDelegate.h"
 
-#import "ViewController.h"
+#import "TableViewController.h"
+#import "MapViewController.h"
 
 @implementation AppDelegate
+@synthesize window = _window;
+@synthesize tabBarController = _tabBarController;
+
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    self.viewController = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
-    self.window.rootViewController = self.viewController;
+    UIViewController *tableViewController = [[TableViewController alloc]initWithNibName:@"TableViewController" bundle:nil];
+    UIViewController *mapViewController = [[MapViewController alloc]initWithNibName:@"MapViewController" bundle:nil];
+    self.tabBarController = [[UITabBarController alloc] init];
+    self.tabBarController.viewControllers = [NSArray arrayWithObjects:tableViewController, mapViewController, nil];
+    self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];
     return YES;
 }
