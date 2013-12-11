@@ -24,6 +24,9 @@
 		C936A6671856A19B001BB932 /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C936A6661856A19B001BB932 /* CustomCell.xib */; };
 		C936A66B1856A2CB001BB932 /* BusinessClass.m in Sources */ = {isa = PBXBuildFile; fileRef = C936A66A1856A2CB001BB932 /* BusinessClass.m */; };
 		C936A66D1856AA24001BB932 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C936A66C1856AA24001BB932 /* MapKit.framework */; };
+		C936A6741856DEC7001BB932 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C936A6721856DEC7001BB932 /* DetailViewController.m */; };
+		C936A6751856DEC7001BB932 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C936A6731856DEC7001BB932 /* DetailViewController.xib */; };
+		C936A67918581220001BB932 /* MyMapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = C936A67818581220001BB932 /* MyMapAnnotation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +55,11 @@
 		C936A6691856A2CB001BB932 /* BusinessClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusinessClass.h; sourceTree = "<group>"; };
 		C936A66A1856A2CB001BB932 /* BusinessClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusinessClass.m; sourceTree = "<group>"; };
 		C936A66C1856AA24001BB932 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		C936A6711856DEC7001BB932 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		C936A6721856DEC7001BB932 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		C936A6731856DEC7001BB932 /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		C936A67718581220001BB932 /* MyMapAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyMapAnnotation.h; sourceTree = "<group>"; };
+		C936A67818581220001BB932 /* MyMapAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyMapAnnotation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,13 +108,13 @@
 		A21C4CE017D7878600C6C3BB /* baseProject */ = {
 			isa = PBXGroup;
 			children = (
+				C936A676185811F3001BB932 /* Map Annotation Files */,
+				C936A6701856DEAA001BB932 /* DetailView */,
+				C936A66F1856D57B001BB932 /* MapView Files */,
 				C936A66E1856AFCC001BB932 /* TableViewFiles */,
 				C936A6681856A2A5001BB932 /* BusinessClass Files (Custom Object) */,
 				A21C4CE917D7878600C6C3BB /* AppDelegate.h */,
 				A21C4CEA17D7878600C6C3BB /* AppDelegate.m */,
-				C936A65B18569C69001BB932 /* MapViewController.h */,
-				C936A65C18569C69001BB932 /* MapViewController.m */,
-				C936A65D18569C69001BB932 /* MapViewController.xib */,
 				A21C4CE117D7878600C6C3BB /* Supporting Files */,
 			);
 			path = baseProject;
@@ -154,6 +162,35 @@
 				C936A6601856A135001BB932 /* Custom Cell Files */,
 			);
 			name = TableViewFiles;
+			sourceTree = "<group>";
+		};
+		C936A66F1856D57B001BB932 /* MapView Files */ = {
+			isa = PBXGroup;
+			children = (
+				C936A65B18569C69001BB932 /* MapViewController.h */,
+				C936A65C18569C69001BB932 /* MapViewController.m */,
+				C936A65D18569C69001BB932 /* MapViewController.xib */,
+			);
+			name = "MapView Files";
+			sourceTree = "<group>";
+		};
+		C936A6701856DEAA001BB932 /* DetailView */ = {
+			isa = PBXGroup;
+			children = (
+				C936A6711856DEC7001BB932 /* DetailViewController.h */,
+				C936A6721856DEC7001BB932 /* DetailViewController.m */,
+				C936A6731856DEC7001BB932 /* DetailViewController.xib */,
+			);
+			name = DetailView;
+			sourceTree = "<group>";
+		};
+		C936A676185811F3001BB932 /* Map Annotation Files */ = {
+			isa = PBXGroup;
+			children = (
+				C936A67718581220001BB932 /* MyMapAnnotation.h */,
+				C936A67818581220001BB932 /* MyMapAnnotation.m */,
+			);
+			name = "Map Annotation Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,6 +247,7 @@
 				A21C4CE517D7878600C6C3BB /* InfoPlist.strings in Resources */,
 				C936A65F18569C69001BB932 /* MapViewController.xib in Resources */,
 				C936A6671856A19B001BB932 /* CustomCell.xib in Resources */,
+				C936A6751856DEC7001BB932 /* DetailViewController.xib in Resources */,
 				A21C4CED17D7878600C6C3BB /* Default.png in Resources */,
 				A21C4CEF17D7878600C6C3BB /* Default@2x.png in Resources */,
 				A21C4CF117D7878600C6C3BB /* Default-568h@2x.png in Resources */,
@@ -227,9 +265,11 @@
 				A21C4CE717D7878600C6C3BB /* main.m in Sources */,
 				A21C4CEB17D7878600C6C3BB /* AppDelegate.m in Sources */,
 				C936A66B1856A2CB001BB932 /* BusinessClass.m in Sources */,
+				C936A67918581220001BB932 /* MyMapAnnotation.m in Sources */,
 				A21C4CF417D7878600C6C3BB /* TableViewController.m in Sources */,
 				C936A65E18569C69001BB932 /* MapViewController.m in Sources */,
 				C936A6651856A18B001BB932 /* CustomCell.m in Sources */,
+				C936A6741856DEC7001BB932 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

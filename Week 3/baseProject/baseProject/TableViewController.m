@@ -9,6 +9,8 @@
 #import "TableViewController.h"
 #import "CustomCell.h"
 #import "BusinessClass.h"
+#import "DetailViewController.h"
+
 @interface TableViewController ()
 
 @end
@@ -76,8 +78,10 @@
 - (void)tableView:(UITableView *)tableView2 commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (editingStyle == UITableViewCellEditingStyleDelete)
-    {   //remove instance of car company from mutable 'name' array
+    {   //remove instance of location from mutable 'name' array
         [nameArray removeObjectAtIndex:indexPath.row];
+        //remove object from BusinessClass mutable array so it is removed from the MapView as well
+        [[BusinessClass GetInstance] removeLocation:indexPath.row];
         //actually remove the object from the tableview displayed to the user
         [tableView2 deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:true];
     }
@@ -85,8 +89,12 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSString *temp = [nameArray objectAtIndex:indexPath.row];
-    NSLog(@"%@", temp);
+    [[BusinessClass GetInstance] selectedLocation:indexPath.row];
+    DetailViewController *detailView = [[DetailViewController alloc] initWithNibName:@"DetailViewController" bundle:nil];
+    if (detailView != nil)
+    {
+        [self presentViewController:detailView animated:true completion:nil];
+    }
 }
 
 -(IBAction)onClick:(id)sender

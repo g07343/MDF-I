@@ -10,11 +10,26 @@
 
 @interface BusinessClass : NSObject
 {
-    NSArray *names;
+    NSMutableArray *names;
+    NSMutableArray *latitudes;
+    NSMutableArray *longitudes;
+    NSString *selectedName;
+    float latitude;
+    float longitude;
 }
 
 +(BusinessClass*)GetInstance;
 
 -(NSArray*)returnNameArray;
+
+-(NSString*)returnName;
+
+-(float)returnLat;
+
+-(float)returnLon;
+
+-(void)selectedLocation:(int)location;
+
+-(void)removeLocation:(int)cell;
 
 @end
