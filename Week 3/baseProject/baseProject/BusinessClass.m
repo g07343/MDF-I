@@ -46,6 +46,16 @@ static BusinessClass *_instance = nil;
 {
     return names;
 }
+//returnes latitudes to caller
+-(NSArray*)returnLatitudes
+{
+    return latitudes;
+}
+//returns longitudes to caller
+-(NSArray*)returnLongitudes
+{
+    return longitudes;
+}
 
 -(NSString*)returnName
 {

@@ -22,6 +22,10 @@
 
 -(NSArray*)returnNameArray;
 
+-(NSArray*)returnLatitudes;
+
+-(NSArray*)returnLongitudes;
+
 -(NSString*)returnName;
 
 -(float)returnLat;

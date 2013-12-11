@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import <MapKit/MapKit.h>
 @interface MapViewController : UIViewController
-
+{
+    IBOutlet MKMapView *mapView;
+    NSArray *locations;
+    NSArray *latitudes;
+    NSArray *longitudes;
+    NSMutableArray *annotations;
+}
 @end
