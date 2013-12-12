@@ -22,7 +22,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     self.title = NSLocalizedString(@"Locations", @"Second");
-    self.tabBarItem.image = [UIImage imageNamed:@"first"];
+    self.tabBarItem.image = [UIImage imageNamed:@"magnify"];
     editing = false;
     
     tableView.rowHeight = 100;
@@ -59,6 +59,7 @@
             }
             cell.textLabel.text = (NSString*)[nameArray objectAtIndex:indexPath.row];
             cell.textLabel.textAlignment = NSTextAlignmentCenter;
+            cell.imageView.image = [UIImage imageNamed:@"tableView"];
         }
     }
     

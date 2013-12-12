@@ -21,7 +21,7 @@
     if (self) {
         // Custom initialization
         self.title = NSLocalizedString(@"Map", @"Second");
-        self.tabBarItem.image = [UIImage imageNamed:@"second"];
+        self.tabBarItem.image = [UIImage imageNamed:@"map"];
         
     }
     return self;
@@ -77,8 +77,6 @@
             [mapView addAnnotation:annotation];
             [annotations addObject:annotation];
         }
-        NSLog(@"Final count of annotations after load is: %i", [annotations count]);
-        
     }
 }
 
