@@ -19,7 +19,7 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
+        // Set up tab stuff
         self.title = NSLocalizedString(@"Map", @"Second");
         self.tabBarItem.image = [UIImage imageNamed:@"map"];
         
@@ -28,7 +28,7 @@
 }
 
 - (void)viewDidDisappear:(BOOL)animated
-{
+{   //remove annotations within local array everytime the view is unloaded
     [mapView removeAnnotations:annotations];
 }
 
@@ -41,8 +41,9 @@
     //get longitudes from mutable array in BusinessClass
     longitudes = [NSArray arrayWithArray:[[BusinessClass GetInstance] returnLongitudes]];
     
+    //get number of items retrieved from BusinessClass
     int numberOfItems = [locations count];
-    
+    //set local array's capacity to number of retrieved items
     annotations = [[NSMutableArray alloc] initWithCapacity: numberOfItems];
     
     
@@ -73,7 +74,7 @@
         location.longitude = [longitude floatValue];
         MyMapAnnotation *annotation = [[MyMapAnnotation alloc] initWithTitle:name coord:location];
         if (annotation != nil)
-        {
+        {   //add annotations to both the mapView, as well as the local mutableArray
             [mapView addAnnotation:annotation];
             [annotations addObject:annotation];
         }

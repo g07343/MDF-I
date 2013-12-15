@@ -89,17 +89,17 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
+{   //alert BusinessClass as to which cell is selected by passing its number
     [[BusinessClass GetInstance] selectedLocation:indexPath.row];
     DetailViewController *detailView = [[DetailViewController alloc] initWithNibName:@"DetailViewController" bundle:nil];
     if (detailView != nil)
-    {
+    {   //display the detailView page
         [self presentViewController:detailView animated:true completion:nil];
     }
 }
 
 -(IBAction)onClick:(id)sender
-{
+{   //sets and resets the editing mode, depending on the 'BOOL' named editing
     if (editing == false)
     {
         editing = true;
