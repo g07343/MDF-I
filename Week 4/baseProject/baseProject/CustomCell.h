@@ -1,13 +1,13 @@
 //
-//  ViewController.h
+//  CustomCell.h
 //  baseProject
 //
-//  Created on 9/4/13.
+//  Created by Matthew Lewis on 12/15/13.
 //  Copyright (c) 2013 FullSail. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface CustomCell : UITableViewCell
 
 @end
