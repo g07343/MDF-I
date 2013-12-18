@@ -9,5 +9,14 @@
 #import <UIKit/UIKit.h>
 
 @interface DetailViewController : UIViewController
+{
+    NSString *name;
+    NSString *url;
+    UIWebView *webView;
+    IBOutlet UILabel *titleLabel;
+    IBOutlet UITextView *textView;
+    bool webOpen;
+}
 
+-(IBAction)onClick:(id)sender;
 @end

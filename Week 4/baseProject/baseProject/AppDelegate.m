@@ -11,6 +11,7 @@
 #import "MainViewController.h"
 #import "XMLViewController.h"
 #import "NewsObject.h"
+#import "LoadingViewController.h"
 
 @implementation AppDelegate
 
@@ -19,25 +20,33 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    //set up loading screen
+    UIViewController *loadingView = [[LoadingViewController alloc] initWithNibName:@"LoadingViewController" bundle:nil];
+    
     //call custom news object immediately to populate arrays needed
     [[NewsObject GetInstance] getArticles];
+    
+    //create an NSTimer to allow enough time to retrieve remote data
     timer = [NSTimer scheduledTimerWithTimeInterval:4.0f target:self selector:@selector(onTimeTriggered) userInfo:nil repeats:false];
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
+    //set up views to be contained within tabBarController, as well as init the tabBarController
     UIViewController *mainView = [[MainViewController alloc] initWithNibName:@"MainViewController" bundle:nil];
     UIViewController *xmlView = [[XMLViewController alloc] initWithNibName:@"XMLViewController" bundle:nil];
     self.tabBarController = [[UITabBarController alloc] init];
     self.tabBarController.viewControllers = [NSArray arrayWithObjects: mainView, xmlView, nil];
-    self.window.rootViewController = self.tabBarController;
     
+    //set the initial rootView to the loadingView until the timer is triggered
+    self.window.rootViewController = loadingView;
+    [self.window makeKeyAndVisible];
     return YES;
 }
 
 -(void)onTimeTriggered
-{
-    NSLog(@"Time's Up!!!");
-    
-    [self.window makeKeyAndVisible];
+{   //set the rootView to the tabBarController now that all data is in place
+    self.window.rootViewController = self.tabBarController;
+    //clean up timer now that we are done with it
+    [timer invalidate];
+    timer = nil;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

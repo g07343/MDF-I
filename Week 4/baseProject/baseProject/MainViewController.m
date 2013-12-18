@@ -9,6 +9,8 @@
 #import "MainViewController.h"
 #import "CustomCell.h"
 #import "NewsObject.h"
+#import "DetailViewController.h"
+
 @interface MainViewController ()
 
 @end
@@ -19,7 +21,7 @@
 {
     [super viewDidLoad];
     self.title = NSLocalizedString(@"Breaking News", @"Breaking News");
-    self.tabBarItem.image = [UIImage imageNamed:@"first"];
+    self.tabBarItem.image = [UIImage imageNamed:@"newsIcon"];
 }
 
 -(void)viewWillAppear:(BOOL)animateds
@@ -27,7 +29,7 @@
     titleArray = [[NSMutableArray alloc] init];
     titleArray = [[NewsObject GetInstance] returnNames];
     NSLog(@"Count of titleArray is: %i", [titleArray count]);
-    tableView.rowHeight = 150.0f;
+    tableView.rowHeight = 100.0f;
 }
 
 
@@ -60,6 +62,7 @@
     cell.textLabel.text = [titleArray objectAtIndex:indexPath.row];
     cell.textLabel.numberOfLines = 2;
     [cell setFont:[UIFont systemFontOfSize:16]];
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;
 }
 
@@ -67,6 +70,9 @@
 {
     NSString *selectedString = [titleArray objectAtIndex:indexPath.row];
     NSLog(@"You selected: %@", selectedString);
+    [[NewsObject GetInstance] setStory:indexPath.row];
+    DetailViewController *detailView = [[DetailViewController alloc] initWithNibName:@"DetailViewController" bundle:nil];
+    [self presentViewController:detailView animated:true completion:nil];
 }
 
 - (void)didReceiveMemoryWarning

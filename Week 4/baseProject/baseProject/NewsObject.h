@@ -12,9 +12,6 @@
 {
     NSMutableArray *nameArray;
     NSMutableArray *linkArray;
-    NSString *nameString;
-    NSString *linkString;
-    ///////////////////////////////
     NSURLRequest *request;
     NSURL *url;
     NSURLConnection *connection;
@@ -22,11 +19,17 @@
     NSString *xmlString;
     NSString *fullPath;
     NSData *xmlData;
+    int current;
     BOOL isTitle;
+    BOOL isLink;
+    int currentLink;
 }
 
 +(NewsObject*)GetInstance;
 -(void)getArticles;
 -(NSString*)returnAll;
 -(NSMutableArray*)returnNames;
+-(void)setStory:(int)number;
+-(NSString*)returnSelected;
+-(NSString*)returnUrl;
 @end

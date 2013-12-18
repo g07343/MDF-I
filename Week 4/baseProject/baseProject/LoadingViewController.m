@@ -1,26 +1,24 @@
 //
-//  XMLViewController.m
+//  LoadingViewController.m
 //  baseProject
 //
-//  Created by Matthew Lewis on 12/15/13.
+//  Created by Matthew Lewis on 12/18/13.
 //  Copyright (c) 2013 FullSail. All rights reserved.
 //
 
-#import "XMLViewController.h"
-#import "NewsObject.h"
-@interface XMLViewController ()
+#import "LoadingViewController.h"
+
+@interface LoadingViewController ()
 
 @end
 
-@implementation XMLViewController
+@implementation LoadingViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
-        self.title = NSLocalizedString(@"XML", @"XML");
-        self.tabBarItem.image = [UIImage imageNamed:@"xmlIcon"];
     }
     return self;
 }
@@ -28,9 +26,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    //retrieve the complete xml text from the NewsObject class upon load and set to textView
-    xmlString = [[NewsObject GetInstance] returnAll];
-    textView.text = xmlString;
+    // Do any additional setup after loading the view from its nib.
 }
 
 - (void)didReceiveMemoryWarning
