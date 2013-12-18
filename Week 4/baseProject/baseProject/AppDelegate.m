@@ -10,6 +10,7 @@
 
 #import "MainViewController.h"
 #import "XMLViewController.h"
+#import "NewsObject.h"
 
 @implementation AppDelegate
 
@@ -18,6 +19,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    //call custom news object immediately to populate arrays needed
+    [[NewsObject GetInstance] getArticles];
+    timer = [NSTimer scheduledTimerWithTimeInterval:4.0f target:self selector:@selector(onTimeTriggered) userInfo:nil repeats:false];
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     UIViewController *mainView = [[MainViewController alloc] initWithNibName:@"MainViewController" bundle:nil];
@@ -25,8 +29,15 @@
     self.tabBarController = [[UITabBarController alloc] init];
     self.tabBarController.viewControllers = [NSArray arrayWithObjects: mainView, xmlView, nil];
     self.window.rootViewController = self.tabBarController;
-    [self.window makeKeyAndVisible];
+    
     return YES;
+}
+
+-(void)onTimeTriggered
+{
+    NSLog(@"Time's Up!!!");
+    
+    [self.window makeKeyAndVisible];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

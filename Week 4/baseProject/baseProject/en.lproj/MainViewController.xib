@@ -7,7 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController">
             <connections>
-                <outlet property="tableView" destination="snd-JF-UcW" id="owd-hG-5Vp"/>
+                <outlet property="tableView" destination="pMC-dK-DX9" id="YJF-NN-k6o"/>
                 <outlet property="view" destination="6" id="7"/>
             </connections>
         </placeholder>
@@ -16,13 +16,13 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="snd-JF-UcW">
-                    <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="pMC-dK-DX9">
+                    <rect key="frame" x="0.0" y="20" width="320" height="553"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <connections>
-                        <outlet property="dataSource" destination="-1" id="hgw-Wy-Xyk"/>
-                        <outlet property="delegate" destination="-1" id="em9-df-vX1"/>
+                        <outlet property="dataSource" destination="-1" id="q93-HG-Pw7"/>
+                        <outlet property="delegate" destination="-1" id="eNR-8x-iAB"/>
                     </connections>
                 </tableView>
             </subviews>

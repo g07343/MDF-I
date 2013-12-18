@@ -24,6 +24,7 @@
 		C9550452185E6B490086D0D6 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9550450185E6B490086D0D6 /* DetailViewController.xib */; };
 		C9550457185E74980086D0D6 /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C9550456185E74980086D0D6 /* CustomCell.m */; };
 		C9550459185E74AB0086D0D6 /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9550458185E74AB0086D0D6 /* CustomCell.xib */; };
+		C955045D185E7D030086D0D6 /* NewsObject.m in Sources */ = {isa = PBXBuildFile; fileRef = C955045C185E7D030086D0D6 /* NewsObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,8 @@
 		C9550455185E74980086D0D6 /* CustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCell.h; sourceTree = "<group>"; };
 		C9550456185E74980086D0D6 /* CustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCell.m; sourceTree = "<group>"; };
 		C9550458185E74AB0086D0D6 /* CustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
+		C955045B185E7D030086D0D6 /* NewsObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsObject.h; sourceTree = "<group>"; };
+		C955045C185E7D030086D0D6 /* NewsObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +101,7 @@
 		A21C4CE017D7878600C6C3BB /* baseProject */ = {
 			isa = PBXGroup;
 			children = (
+				C955045A185E7CE70086D0D6 /* CustomObject */,
 				C9550454185E747F0086D0D6 /* CustomCell Files */,
 				C9550453185E6DF80086D0D6 /* MainViewController Files */,
 				C955044D185E6B360086D0D6 /* DetailViewController Files */,
@@ -161,6 +165,15 @@
 				C9550458185E74AB0086D0D6 /* CustomCell.xib */,
 			);
 			name = "CustomCell Files";
+			sourceTree = "<group>";
+		};
+		C955045A185E7CE70086D0D6 /* CustomObject */ = {
+			isa = PBXGroup;
+			children = (
+				C955045B185E7D030086D0D6 /* NewsObject.h */,
+				C955045C185E7D030086D0D6 /* NewsObject.m */,
+			);
+			name = CustomObject;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +245,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C955045D185E7D030086D0D6 /* NewsObject.m in Sources */,
 				C9550451185E6B490086D0D6 /* DetailViewController.m in Sources */,
 				A21C4CE717D7878600C6C3BB /* main.m in Sources */,
 				C9550457185E74980086D0D6 /* CustomCell.m in Sources */,
@@ -324,6 +338,7 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "baseProject/baseProject-Prefix.pch";
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
 				INFOPLIST_FILE = "baseProject/baseProject-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -335,6 +350,7 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "baseProject/baseProject-Prefix.pch";
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
 				INFOPLIST_FILE = "baseProject/baseProject-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;

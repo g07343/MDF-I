@@ -14,6 +14,8 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="93"/>
                 <autoresizingMask key="autoresizingMask"/>
             </tableViewCellContentView>
+            <color key="backgroundColor" red="0.071994876550000003" green="0.12959727739999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <color key="tintColor" red="0.071994876550000003" green="0.12959727739999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
         </tableViewCell>
     </objects>
 </document>

@@ -7,7 +7,7 @@
 //
 
 #import "XMLViewController.h"
-
+#import "NewsObject.h"
 @interface XMLViewController ()
 
 @end
@@ -28,6 +28,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    xmlString = [[NewsObject GetInstance] returnAll];
+    textView.text = xmlString;
     // Do any additional setup after loading the view from its nib.
 }
 

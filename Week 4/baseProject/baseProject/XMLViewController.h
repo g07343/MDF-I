@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface XMLViewController : UIViewController
-
+{
+    NSString *xmlString;
+    IBOutlet UITextView *textView;
+}
 @end
