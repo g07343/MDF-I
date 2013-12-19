@@ -33,7 +33,7 @@
 		C9CDE27A1862CBFB0067165D /* appIcon_57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = C9CDE2771862CBFB0067165D /* appIcon_57x57.png */; };
 		C9CDE27B1862CBFB0067165D /* appIcon_114x114.png in Resources */ = {isa = PBXBuildFile; fileRef = C9CDE2781862CBFB0067165D /* appIcon_114x114.png */; };
 		C9CDE27C1862CBFB0067165D /* appIcon_120x120.png in Resources */ = {isa = PBXBuildFile; fileRef = C9CDE2791862CBFB0067165D /* appIcon_120x120.png */; };
-		C9CDE2801862CE280067165D /* launch_320x480.png in Resources */ = {isa = PBXBuildFile; fileRef = C9CDE27D1862CE280067165D /* launch_320x480.png */; };
+		C9CDE2801862CE280067165D /* Default~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = C9CDE27D1862CE280067165D /* Default~iphone.png */; };
 		C9CDE2811862CE280067165D /* launch_640x960.png in Resources */ = {isa = PBXBuildFile; fileRef = C9CDE27E1862CE280067165D /* launch_640x960.png */; };
 		C9CDE2821862CE280067165D /* launch_640x1136.png in Resources */ = {isa = PBXBuildFile; fileRef = C9CDE27F1862CE280067165D /* launch_640x1136.png */; };
 /* End PBXBuildFile section */
@@ -75,7 +75,7 @@
 		C9CDE2771862CBFB0067165D /* appIcon_57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appIcon_57x57.png; sourceTree = "<group>"; };
 		C9CDE2781862CBFB0067165D /* appIcon_114x114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appIcon_114x114.png; sourceTree = "<group>"; };
 		C9CDE2791862CBFB0067165D /* appIcon_120x120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appIcon_120x120.png; sourceTree = "<group>"; };
-		C9CDE27D1862CE280067165D /* launch_320x480.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch_320x480.png; sourceTree = "<group>"; };
+		C9CDE27D1862CE280067165D /* Default~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default~iphone.png"; sourceTree = "<group>"; };
 		C9CDE27E1862CE280067165D /* launch_640x960.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch_640x960.png; sourceTree = "<group>"; };
 		C9CDE27F1862CE280067165D /* launch_640x1136.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch_640x1136.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -214,7 +214,7 @@
 		C9CDE276186226550067165D /* icons */ = {
 			isa = PBXGroup;
 			children = (
-				C9CDE27D1862CE280067165D /* launch_320x480.png */,
+				C9CDE27D1862CE280067165D /* Default~iphone.png */,
 				C9CDE27E1862CE280067165D /* launch_640x960.png */,
 				C9CDE27F1862CE280067165D /* launch_640x1136.png */,
 				C9CDE2771862CBFB0067165D /* appIcon_57x57.png */,
@@ -286,7 +286,7 @@
 				C9CDE275186226160067165D /* xmlIcon.png in Resources */,
 				C9550459185E74AB0086D0D6 /* CustomCell.xib in Resources */,
 				C9CDE27C1862CBFB0067165D /* appIcon_120x120.png in Resources */,
-				C9CDE2801862CE280067165D /* launch_320x480.png in Resources */,
+				C9CDE2801862CE280067165D /* Default~iphone.png in Resources */,
 				C9550452185E6B490086D0D6 /* DetailViewController.xib in Resources */,
 				C9CDE2811862CE280067165D /* launch_640x960.png in Resources */,
 				C9CDE27A1862CBFB0067165D /* appIcon_57x57.png in Resources */,
