@@ -59,6 +59,8 @@
         }
     }
     cell.textLabel.textColor = [UIColor whiteColor];
+    cell.textLabel.backgroundColor = [UIColor clearColor];
+    cell.textLabel.textAlignment = NSTextAlignmentRight;
     cell.textLabel.text = [titleArray objectAtIndex:indexPath.row];
     cell.textLabel.numberOfLines = 2;
     [cell setFont:[UIFont systemFontOfSize:16]];
