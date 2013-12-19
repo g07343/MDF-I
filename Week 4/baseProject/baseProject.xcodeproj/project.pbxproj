@@ -30,6 +30,12 @@
 		C9CDE271186223720067165D /* usaToday_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = C9CDE270186223720067165D /* usaToday_logo.png */; };
 		C9CDE273186225990067165D /* newsIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = C9CDE272186225990067165D /* newsIcon.png */; };
 		C9CDE275186226160067165D /* xmlIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = C9CDE274186226160067165D /* xmlIcon.png */; };
+		C9CDE27A1862CBFB0067165D /* appIcon_57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = C9CDE2771862CBFB0067165D /* appIcon_57x57.png */; };
+		C9CDE27B1862CBFB0067165D /* appIcon_114x114.png in Resources */ = {isa = PBXBuildFile; fileRef = C9CDE2781862CBFB0067165D /* appIcon_114x114.png */; };
+		C9CDE27C1862CBFB0067165D /* appIcon_120x120.png in Resources */ = {isa = PBXBuildFile; fileRef = C9CDE2791862CBFB0067165D /* appIcon_120x120.png */; };
+		C9CDE2801862CE280067165D /* launch_320x480.png in Resources */ = {isa = PBXBuildFile; fileRef = C9CDE27D1862CE280067165D /* launch_320x480.png */; };
+		C9CDE2811862CE280067165D /* launch_640x960.png in Resources */ = {isa = PBXBuildFile; fileRef = C9CDE27E1862CE280067165D /* launch_640x960.png */; };
+		C9CDE2821862CE280067165D /* launch_640x1136.png in Resources */ = {isa = PBXBuildFile; fileRef = C9CDE27F1862CE280067165D /* launch_640x1136.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +72,12 @@
 		C9CDE270186223720067165D /* usaToday_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = usaToday_logo.png; sourceTree = "<group>"; };
 		C9CDE272186225990067165D /* newsIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = newsIcon.png; sourceTree = "<group>"; };
 		C9CDE274186226160067165D /* xmlIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = xmlIcon.png; sourceTree = "<group>"; };
+		C9CDE2771862CBFB0067165D /* appIcon_57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appIcon_57x57.png; sourceTree = "<group>"; };
+		C9CDE2781862CBFB0067165D /* appIcon_114x114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appIcon_114x114.png; sourceTree = "<group>"; };
+		C9CDE2791862CBFB0067165D /* appIcon_120x120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appIcon_120x120.png; sourceTree = "<group>"; };
+		C9CDE27D1862CE280067165D /* launch_320x480.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch_320x480.png; sourceTree = "<group>"; };
+		C9CDE27E1862CE280067165D /* launch_640x960.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch_640x960.png; sourceTree = "<group>"; };
+		C9CDE27F1862CE280067165D /* launch_640x1136.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch_640x1136.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,6 +214,12 @@
 		C9CDE276186226550067165D /* icons */ = {
 			isa = PBXGroup;
 			children = (
+				C9CDE27D1862CE280067165D /* launch_320x480.png */,
+				C9CDE27E1862CE280067165D /* launch_640x960.png */,
+				C9CDE27F1862CE280067165D /* launch_640x1136.png */,
+				C9CDE2771862CBFB0067165D /* appIcon_57x57.png */,
+				C9CDE2781862CBFB0067165D /* appIcon_114x114.png */,
+				C9CDE2791862CBFB0067165D /* appIcon_120x120.png */,
 				C9CDE274186226160067165D /* xmlIcon.png */,
 				C9CDE272186225990067165D /* newsIcon.png */,
 				C9CDE270186223720067165D /* usaToday_logo.png */,
@@ -261,17 +279,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9CDE26E186222670067165D /* LoadingViewController.xib in Resources */,
+				C9CDE27B1862CBFB0067165D /* appIcon_114x114.png in Resources */,
 				A21C4CE517D7878600C6C3BB /* InfoPlist.strings in Resources */,
 				C9CDE273186225990067165D /* newsIcon.png in Resources */,
 				A21C4CED17D7878600C6C3BB /* Default.png in Resources */,
 				C9CDE275186226160067165D /* xmlIcon.png in Resources */,
 				C9550459185E74AB0086D0D6 /* CustomCell.xib in Resources */,
+				C9CDE27C1862CBFB0067165D /* appIcon_120x120.png in Resources */,
+				C9CDE2801862CE280067165D /* launch_320x480.png in Resources */,
 				C9550452185E6B490086D0D6 /* DetailViewController.xib in Resources */,
+				C9CDE2811862CE280067165D /* launch_640x960.png in Resources */,
+				C9CDE27A1862CBFB0067165D /* appIcon_57x57.png in Resources */,
 				A21C4CEF17D7878600C6C3BB /* Default@2x.png in Resources */,
 				C9CDE271186223720067165D /* usaToday_logo.png in Resources */,
 				A21C4CF117D7878600C6C3BB /* Default-568h@2x.png in Resources */,
 				C955044B185E6B180086D0D6 /* XMLViewController.xib in Resources */,
 				A21C4CF717D7878600C6C3BB /* MainViewController.xib in Resources */,
+				C9CDE2821862CE280067165D /* launch_640x1136.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
